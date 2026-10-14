@@ -1,0 +1,1176 @@
+{
+  "schema_version": 1,
+  "source": "Official NVIDIA asset dependency closure, frozen 2026-10-14",
+  "roots": [
+    "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/HumanMotionLibrary.usd"
+  ],
+  "files": [
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeBackward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeBackward.usd",
+      "sha256": "24a9f0fd1926da8d7e54523465fee3e4f4ffef007ed2139415c231c46c711d92",
+      "bytes": 1260674
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeForward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeForward.usd",
+      "sha256": "5b8cb8495d37d5ff869dbd071698548c0fa02887b491345de729fa56ac699125",
+      "bytes": 903351
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeLeft.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeLeft.usd",
+      "sha256": "9ce5695e29e2be2b62f5d86ec89695115e995604bc8c46d58a400a440fc4063d",
+      "bytes": 986805
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeRight.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Dodge/DodgeRight.usd",
+      "sha256": "9890d93275cb097b10a4df1124b5e7d2c2b7f61be292ea536662688f2ce27f13",
+      "bytes": 850556
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallBackward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallBackward.usd",
+      "sha256": "4d1bac59abaf13eab8b76ec4e3ba164e9495ec1cc6d2f7d0b462281738c4792d",
+      "bytes": 1183191
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallBackward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallBackward_01.usd",
+      "sha256": "9340512a491bc499964a9e25f733b666d94489e2fc9409467e2741823c0e69e5",
+      "bytes": 1183581
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallForward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallForward.usd",
+      "sha256": "651a148f8931a75bacc24c9ecdd11bd9cd7b3fa1346ab7b844c13d65e649e978",
+      "bytes": 1322778
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallForward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallForward_01.usd",
+      "sha256": "1e4e7c0d038c6ce2d8fa6379f66bce7b7dbca97e57e8e47cd21e305ec52e6a25",
+      "bytes": 1322788
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallLeft.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallLeft.usd",
+      "sha256": "4971ae62a8c774add580fc1e69a757b48688d8cff92a0b365832182a8c44e229",
+      "bytes": 747413
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallRight.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Fall/FallRight.usd",
+      "sha256": "e18d6a5cdc57b7d0457fa1b5907f1e9615d7c6cee50f01eabfa810d9883d59a9",
+      "bytes": 747410
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/Idle.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/Idle.usd",
+      "sha256": "0e341b041f37fd2666d7cca45d1bbe5f3a189a31fa5ac3d5136d0285e60200eb",
+      "bytes": 316189
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleCautious.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleCautious.usd",
+      "sha256": "5eee9c2299fda91d91336a0af31b19c71561372ca3d1c9e5b91786d29346f313",
+      "bytes": 2611216
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleGroove.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleGroove.usd",
+      "sha256": "a5e5902c6d91fa781930a85931679ef587a43cb06c43ab8bf5b4388a59708a38",
+      "bytes": 1832647
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTaunt.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTaunt.usd",
+      "sha256": "28c73200df008c052611e76335c8bcbd2fdbf89ecf3c4457384a26784d192fa8",
+      "bytes": 1377932
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTilt.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTilt.usd",
+      "sha256": "89a8ca15acabac1b7b108d4277c34b6865fb660bfba3ab410c48bd71bfc33426",
+      "bytes": 315770
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTired.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTired.usd",
+      "sha256": "add028fb270a4adb107cbce8794e3c81ee2e5625d21dd2aa854a77142d81edb8",
+      "bytes": 1612252
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTough.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Idle/IdleTough.usd",
+      "sha256": "8dadd5f2ba2498c65a9003878591e27b622a1452b394aade827cf2bd6313ae2a",
+      "bytes": 287525
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcLeftHand.usd",
+      "sha256": "dc26f6399eb06db0ef29d03914f80ed7a4ca847571d8031b6b0521c0317c38a3",
+      "bytes": 935509
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcLeftHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcLeftHand_01.usd",
+      "sha256": "816323ba7b6d42f37e565018387466c2879e75a9e852e490cff553683df2b14f",
+      "bytes": 843028
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcRightHand.usd",
+      "sha256": "6ad4454e800119881f4cce44d829a6231f765ac6d17cb1af9c8ec6082f98e455",
+      "bytes": 935522
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcRightHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectArcRightHand_01.usd",
+      "sha256": "314e9772a753386e300d0f713bfe25612bb63a22061f41c5ab8e6a3230631ba0",
+      "bytes": 843041
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectBackwardLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectBackwardLeftHand.usd",
+      "sha256": "2f2863d02ce396ef940c899d756913c8fb03747e49beba3c8df2f96f2096de39",
+      "bytes": 3617436
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectBackwardRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectBackwardRightHand.usd",
+      "sha256": "2f552e98dfd9c910ae3a61744550c3d744ae36f08067fa92c2c5d17ec3c76898",
+      "bytes": 3615761
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands.usd",
+      "sha256": "e124d90ac618c683157819d39a371eb0979110ff448921b36b5ae5ab61d45b76",
+      "bytes": 623373
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands_01.usd",
+      "sha256": "8a877265c2e2b2019c36c71890bbdb886b8028ca779e6e40997e63854669a051",
+      "bytes": 1296189
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardBothHands_02.usd",
+      "sha256": "902dd32ca625f8185aafc4388a0d7fd78b30404d97744be377141f98e3fb6f81",
+      "bytes": 1296215
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardLeftHand.usd",
+      "sha256": "ed1adfbfff52f37afebb5dd395e84b354c52c92b82422baeb5cf94e86bb6eb19",
+      "bytes": 843031
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardLeftHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardLeftHand_01.usd",
+      "sha256": "5581cc4215ecbbf61320fc8444b0756088018038888a2e4e341c6c393c208f0d",
+      "bytes": 995623
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardRightHand.usd",
+      "sha256": "312538b3030b22e880f55a1f43f0667d947845dd0b1cd052cec4462231b8ad8f",
+      "bytes": 843044
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardRightHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectForwardRightHand_01.usd",
+      "sha256": "2aff2a941af4fe1dcf3104e7b65300eeeeab7182b44a57d968ea5b50a7edf6ee",
+      "bytes": 995637
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleBothHands.usd",
+      "sha256": "d5cf1b33805dc8da2ef1c6e08267bbebd319da3976992af6d1821673e82fa41d",
+      "bytes": 3703068
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleLeftHand.usd",
+      "sha256": "e88271092413ae8ac2b3f7779c0dfcbe5c884ee7fb5730026a671291f9622df0",
+      "bytes": 10874890
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectIdleRightHand.usd",
+      "sha256": "0bf56cfbff61b561e0547d8fb10adf988c6607b1877ba6d5df9755f29475ec8b",
+      "bytes": 10877160
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRandomLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRandomLeftHand.usd",
+      "sha256": "777bb63ab166f646222a596a4fb419a2fa57b84f198804b531ee44f0b883d970",
+      "bytes": 8158202
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRandomRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRandomRightHand.usd",
+      "sha256": "b9fb44deab7f34b5510d6f3c763331f8f936f2221736ddf0bd8d83f8335b37ce",
+      "bytes": 8158215
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionBothHands.usd",
+      "sha256": "99bf65e80431b2d0fe20fdc2b05555c5e71ced006e2d9f8fe1b2211d6e831ab5",
+      "bytes": 4160759
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionBothHands_01.usd",
+      "sha256": "278087d44404f3a0e6a34f231f27733cf8ec6816ad10bac770017946eafbc475",
+      "bytes": 4160785
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionLeftHand.usd",
+      "sha256": "a7f7057ab211144a8d58119c2c2889c8c6675c6c3d29a125f66404ffe9e3df4a",
+      "bytes": 5524856
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectRepositionRightHand.usd",
+      "sha256": "24d1a56e85e9e890083357dbdb5e0ea7585e41ae58e94388f51beb2ba28583f9",
+      "bytes": 5527156
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeBothHands.usd",
+      "sha256": "31f56d0168572f39ffd24e728bf70c828dfccdf0f868bf2c0a5557c38458d07c",
+      "bytes": 919307
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeBothHands_01.usd",
+      "sha256": "0062be3f48fa100f507499f99bc908c4209b7958e6c45b6be2d378e2c6457aeb",
+      "bytes": 919333
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeLeftHand.usd",
+      "sha256": "be81ba371f5ada2d795fa18ab991782fa0e47acf628b565a808ed5683707e451",
+      "bytes": 970189
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeLeftHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeLeftHand_01.usd",
+      "sha256": "6ae5021d34c6e6a1a5624ce13bd78004513ae7868cd8a9e72e115b1e9e777c15",
+      "bytes": 889270
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeRightHand.usd",
+      "sha256": "e38358838ea6de4dbcf4d7041c183842434391864d21cd869a11bf86d1be3971",
+      "bytes": 970203
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeRightHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSnakeRightHand_01.usd",
+      "sha256": "dca462779db773cf44b8f2fcd94eb4ed26d18ab598a3bf8cd2b81d7f749ee90e",
+      "bytes": 889283
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralBothHands.usd",
+      "sha256": "2e5ba7e5483846c54f268d656b59d3d7e6262b2fd327617e379c91d6c24d86aa",
+      "bytes": 2202474
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralBothHands_01.usd",
+      "sha256": "952b89fd37bd053103a2cde5d6bac9eab932624e8f039247c07baa8b5f21f1fe",
+      "bytes": 2202495
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralLeftHand.usd",
+      "sha256": "1f0229a75a72af81862c7d41a2307ea237c9794c9f757687852969b755632bcf",
+      "bytes": 1848755
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralLeftHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralLeftHand_01.usd",
+      "sha256": "83d570cdfbab16d664e95a84d2375e4d85bd2ab136e85eaaea9558eec53a7ce2",
+      "bytes": 2415194
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralRightHand.usd",
+      "sha256": "c835496242e498466498c5312f511203e2b1bef87135c37c6ccb34a826383576",
+      "bytes": 1848768
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralRightHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectSpiralRightHand_01.usd",
+      "sha256": "e7987d19990916080fb258d3365d3a60a2ceaee4ec69a69d8a84458376ed958b",
+      "bytes": 2415202
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands.usd",
+      "sha256": "029feb1f798f241f2453e4960e27bbbf53c2daf00b3ab6f178959f761b2f61d8",
+      "bytes": 4741068
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_01.usd",
+      "sha256": "49de4419bf00753e38c641f070a6f8379a78bf393dae6f7ec64165ed4e83f83f",
+      "bytes": 4741094
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_02.usd",
+      "sha256": "e0227ccf9f2f8437fd0a773f1163d14b61a2a9ca244201928ac7eb79bb7e5c41",
+      "bytes": 919305
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartBothHands_03.usd",
+      "sha256": "dc74515ec538de16dc1a84c3cea31fe984220aaae7f87179d2aed8915d82947a",
+      "bytes": 919331
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartLeftHand.usd",
+      "sha256": "1bcb0278116a1821cf3cf6742e2f5f62202399a6791285c89d9ae66259102570",
+      "bytes": 7432230
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartLeftHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartLeftHand_01.usd",
+      "sha256": "3381f3cfcda344a11e05a3f6364c2c93dfe40e15031b56403fbf2bfb12c0d786",
+      "bytes": 10287551
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartRightHand.usd",
+      "sha256": "f451cd84f9c0f7cfd772c23bbf3ae5953e5f71df9637778fd35d5ca50c77f37e",
+      "bytes": 7432243
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartRightHand_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStartRightHand_01.usd",
+      "sha256": "b37d215d953748ae1f0c4eed3d33ff64f9b00f794fe49f77cb6679c112856168",
+      "bytes": 10287563
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopBothHands.usd",
+      "sha256": "243fa485b56a07d2ee22bdd037898dac308fbe1b65c580d051623b02ef924689",
+      "bytes": 5857762
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopBothHands_01.usd",
+      "sha256": "648519f693cc7882fd647acdcd6e9c4d22724da5696a2af3fbd867feb09843d4",
+      "bytes": 5857788
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStopRightHand.usd",
+      "sha256": "d6ebff9aed3ba4aeaa1ab44834df3ee111d0a659feea38e3a36fbfb0bd1e40aa",
+      "bytes": 7386008
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeBothHands.usd",
+      "sha256": "e3e525bf342c22a16ce518891d83150cddb6c3841be181cb97ea837c3f516648",
+      "bytes": 3996606
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeBothHands_01.usd",
+      "sha256": "6738f6f45e196a3f0d1ef84bf1fb12eebf5de993d310eb369d88f1bd2011a91a",
+      "bytes": 3996631
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeLeftHand.usd",
+      "sha256": "72378b64b23a6f7680779a325d9f789e4f78f2515e323941876a38a7a1d1b746",
+      "bytes": 4865912
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectStrafeRightHand.usd",
+      "sha256": "fa6d39e1ecae1050bb688863b606db9ad5e04bfbf1a2f25ffb0eb4636b40630c",
+      "bytes": 4865925
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands.usd",
+      "sha256": "94d3db7edc794a7e39ae73eb2140fa63b54d62e8cadc65420dee778b108ddeeb",
+      "bytes": 9621701
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_01.usd",
+      "sha256": "ede7a35f2858cee46a5c66ec2a332bbe28efcfbe16e22861a69064302b11a3ef",
+      "bytes": 9621727
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_02.usd",
+      "sha256": "51b0f543ac7bc41bc31fd11aa70b1f60a6ae0541352218f309f27774f24b76ec",
+      "bytes": 8673783
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnBothHands_03.usd",
+      "sha256": "0dcc89c2d5eeb7a0ee2a8fb9f8238cdbf306f11bb5240d2c1c476efd2103f521",
+      "bytes": 8673807
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnInPlaceLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnInPlaceLeftHand.usd",
+      "sha256": "4e9ed53990528a4f522e86164420ed365d380370834a727d55c430eca7159bab",
+      "bytes": 3943455
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnInPlaceRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnInPlaceRightHand.usd",
+      "sha256": "7d1336bee9d4601028f27a6ef784606ae8b1c49f627f98cdb397499d79e12734",
+      "bytes": 3945756
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnsLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnsLeftHand.usd",
+      "sha256": "aace94a68cc4f6bffd14bd51cbaa10ae0cb67fe9e1a7b3b7255b69840686b2a2",
+      "bytes": 8174410
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnsRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectTurnsRightHand.usd",
+      "sha256": "6ad5d645abac14258f4aa8fb72295fbefda9c27ce7824014c0d05b1741aa3de8",
+      "bytes": 8176711
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectWalkStopLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveCarryObject/CarryObjectWalkStopLeftHand.usd",
+      "sha256": "adb3ab6cc980224376858db32ab5f2ea2f9a8a69219de2d3262f10d4e4b51ee9",
+      "bytes": 7383704
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogBackward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogBackward.usd",
+      "sha256": "60fad7c0f1d2b7f655fe45409f0a2a0dbf6401af254c1b24f7be0559a01f905e",
+      "bytes": 349801
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogBackward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogBackward_01.usd",
+      "sha256": "1f0783a85ebe667129748378ade8de974278cb75736c19c6b985a204193c3045",
+      "bytes": 351245
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogForward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogForward.usd",
+      "sha256": "cdccd191bc7c5fd82c4c119e687b1f28520a2a96233b331b1c6fb310a33bf12a",
+      "bytes": 681826
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogForward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogForward_01.usd",
+      "sha256": "3678840b2d2c2fe5936b9fbaae02a88cc405003e19d2d673d749288e685615d3",
+      "bytes": 683301
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogRandom.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogRandom.usd",
+      "sha256": "5213dad202a827cfd5fccdb96fd9c68b92cf2df149bed35564b11030341520d7",
+      "bytes": 1160489
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogRandom_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogRandom_01.usd",
+      "sha256": "c48490c0279540cc05f8eb014968ccead063a3a215548c6f7320c7138f1a144c",
+      "bytes": 1160496
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogReposition.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogReposition.usd",
+      "sha256": "ff2a563b9df4be9d9d83ac862315c5cca419c5f3b6376e44888ec3d6bd6cd627",
+      "bytes": 344894
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogReposition_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogReposition_01.usd",
+      "sha256": "33a7f4f9da1ea2ad93193273f88aa0f43ed83a642d07463bd7552e143a99fc59",
+      "bytes": 344307
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral.usd",
+      "sha256": "d78b98fc7e338e7e7c15bd1314d38f4f628bde06892a93d471873276c140d1c1",
+      "bytes": 455336
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_01.usd",
+      "sha256": "c207a18fa4814b9e5eda8ce4b564d37bc9f7e10c36f01c9f38eb6a5a0663fb79",
+      "bytes": 455343
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_02.usd",
+      "sha256": "7b85119e69b90c9eea8deda4f03e446481ad176f2859e80409fefe176b962e25",
+      "bytes": 547752
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_03.usd",
+      "sha256": "7b32e8326df4244871be6f199f23b2274d1addaf16b254f3c9ab73e16777df9e",
+      "bytes": 547759
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_04.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_04.usd",
+      "sha256": "560d6df9cdc37c09f4a99dc060fbda3762562f9445d1693b1f22efd46b5f3d3b",
+      "bytes": 543184
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_05.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogSpiral_05.usd",
+      "sha256": "d1293c8b38d4f77257ef613a3c7cba4b7389a4a8f7df2c53129f6e3a5f51a68a",
+      "bytes": 543136
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStart.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStart.usd",
+      "sha256": "b0a2d14057e1110813b598abf8030b7249bb9e98538d62dcaea7e87d83dbdd38",
+      "bytes": 235630
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStart_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStart_01.usd",
+      "sha256": "392ea996fb511899fd25968810957a2fd7978a85b441c871cf1a243fc605420d",
+      "bytes": 235637
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop.usd",
+      "sha256": "a79343f26aac1d5997051a5ace5bbf9d8ec3746e1545886d339f2afe5b3dd0dd",
+      "bytes": 316551
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_01.usd",
+      "sha256": "aab4e6e84202f436f75f5425a96383fbfbc178bf76373c8b56b26d5e3f8f2f0a",
+      "bytes": 316613
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_02.usd",
+      "sha256": "3012d873a0c06f36d183bee3574a97b4345964048749dca541178c099917d4ca",
+      "bytes": 196326
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStop_03.usd",
+      "sha256": "df8b1b142e19ea1f8d6f105d218b269e45744795857487b4292a4b22aab80312",
+      "bytes": 196333
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStrafe.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStrafe.usd",
+      "sha256": "836f85be054450015440cb10821dc3dde1a7c42d346c44f5e2b320dcd6a004b0",
+      "bytes": 163959
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStrafe_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogStrafe_01.usd",
+      "sha256": "812231ec62255b3d19b10a43bae6563e20a222e5029543d7c4c32fe588915993",
+      "bytes": 164024
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns.usd",
+      "sha256": "62f487e00c9a31483914e8787cf990ee66281c0aac5db2861527b52a74fe7ffc",
+      "bytes": 367420
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_01.usd",
+      "sha256": "b13285220a8b13aec4f1853632de1fe37513657fe5861e650b08d141585686e6",
+      "bytes": 367427
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_02.usd",
+      "sha256": "2da044f8be785dab3bb2d01f6a62d18c2ceb329be98014daae2e187cf352476e",
+      "bytes": 348980
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveJog/JogTurns_03.usd",
+      "sha256": "b541f16d2643a5358c55505157c17ffb6ced44f2e86b02f2075f6a3384ceef43",
+      "bytes": 349610
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkArc.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkArc.usd",
+      "sha256": "713deb78149e3d5ccd77e66e8c7b7f396c00339e1ea2e947435e33a6c8c0f392",
+      "bytes": 989473
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkArc_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkArc_01.usd",
+      "sha256": "1ce2654d5eda4bc2bab8e08f5b03802eae0fa115e2e995413e2d634b576a6d23",
+      "bytes": 989480
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkBackward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkBackward.usd",
+      "sha256": "15b3a63f5a88e39c90a4d493f68a1b1ea0556aaf2e89d689a937bf06cb74e36e",
+      "bytes": 4415839
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkBackward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkBackward_01.usd",
+      "sha256": "7af1f6a7477ec7f4904aa32f3c00062d84aae2cc55dec0607d505c70195b8fa5",
+      "bytes": 4415846
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkForward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkForward.usd",
+      "sha256": "ebf5b1921e69575fb85490e288b0dba499c87ee27d68d94eec86a8c78ef551a7",
+      "bytes": 713512
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkForward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkForward_01.usd",
+      "sha256": "c2b12daa69ed2ae51e1f07e47fbff80a2457eec86aaf598428cf3d8d6dbfdf8a",
+      "bytes": 713519
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRandom.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRandom.usd",
+      "sha256": "cae18a0badeb9b41d70ae70fcdee4a85e1b15c7603698fe13c7c10c8c071ebaf",
+      "bytes": 8736179
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRandom_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRandom_01.usd",
+      "sha256": "6c2d2be41a8cc997380b9b1cb5910e811fd309362e66983b5c1335d5496af25e",
+      "bytes": 8736186
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRepostion.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRepostion.usd",
+      "sha256": "e1d1bdf52359b2520f7fa7d9060361a23afbe533214a858d6d1c198414e4a080",
+      "bytes": 3360775
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRepostion_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkRepostion_01.usd",
+      "sha256": "f5b8b806ba6c2a81bc61161333049d4e5048318e5c22d6b8e0ee8576b3be2a99",
+      "bytes": 3360783
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSnake.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSnake.usd",
+      "sha256": "f97760074b8e1bb9edae68856b25d30a13417804dfad314b9a41f44398a7bf36",
+      "bytes": 845293
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSnake_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSnake_01.usd",
+      "sha256": "8bd926f3a3a3e95b60656a8868cd1b858e5e499d255a3d5efb3cf5c0e756c45c",
+      "bytes": 845300
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSpiral.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSpiral.usd",
+      "sha256": "e793b6fa02125d76b0b836f10506f3439802b953edc8eb032702c1c1ff6bab72",
+      "bytes": 2528428
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSpiral_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkSpiral_01.usd",
+      "sha256": "41337a08e702bc2785331d231bbb3932b6e6dd872d54f1fbc65adbc1e091c31d",
+      "bytes": 2528435
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart.usd",
+      "sha256": "20f5db25ffcfe33e8dfd17c2dbe367768abd6aa762b060f3dd12f2b8ef570c0c",
+      "bytes": 4690148
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_01.usd",
+      "sha256": "8b28571945655fd3c92b4fa2d9677aa14697be162b91b47f6f68c3f294b12fcb",
+      "bytes": 4690156
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_02.usd",
+      "sha256": "6a272634aa0326c464408a60f1c6fc3d6c8d8821c2ec8841defffffe1f03f25d",
+      "bytes": 755149
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStart_03.usd",
+      "sha256": "0a815dc1b0b3c633d598ac3bb7e2086be92505ed210425ea42658f1f7fd21afd",
+      "bytes": 755154
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop.usd",
+      "sha256": "03b616b3e249323cb2eec5a19729861b72b351a143d33864dbaf86b389fad6f2",
+      "bytes": 3883263
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_01.usd",
+      "sha256": "47a1f8adbc3033d5d7fb108b5bb7d6d24bd361ea0018fea845cbee4c75d0f1a7",
+      "bytes": 3883270
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_02.usd",
+      "sha256": "22dd2f2d6b009991469c292da92f33bfa219859d0ae9c2987d3abe2a00d60196",
+      "bytes": 768996
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_03.usd",
+      "sha256": "cab87e0c6e8e97a3f1dcbf58b042827e31ec44efe3366e8d304fef23f78f69d7",
+      "bytes": 769003
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_04.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_04.usd",
+      "sha256": "fbc90cf07a5963194f16db2565721b92b14256c8e44f18875d79c576e1011959",
+      "bytes": 651084
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_05.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_05.usd",
+      "sha256": "9ff3efa25319e9d3921ab4bcaf3591d89b1868de59ae71989e614ecdc19a9600",
+      "bytes": 651091
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_06.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_06.usd",
+      "sha256": "f156c59dfe658dcebdffe2bcd424fa675b5576bfbbd1574b4bfbcbd02c35975d",
+      "bytes": 651084
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_07.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_07.usd",
+      "sha256": "8a863bf147af1c15054e723300704802d4f279585b5636d8c7424fee0893335e",
+      "bytes": 651091
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_08.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_08.usd",
+      "sha256": "d1dbb2da42c9b8c0afd517319f26bafb4454cc3eab7823a94231bc1d76298a97",
+      "bytes": 417596
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_09.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStop_09.usd",
+      "sha256": "afae9be4c1f0d678c1b71c6ee04272f26781287a23c5140a22f546598c48230b",
+      "bytes": 417603
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe.usd",
+      "sha256": "48c8853246ffc7fbb7f62ddf36a5a23fd3c67f5c7b711de7ff8db90729ab89e1",
+      "bytes": 1578199
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_01.usd",
+      "sha256": "5a2878f2e24e78525c8a893c6bc4be48ad98f1abeb9389e3cc02f5fdd6fa2256",
+      "bytes": 1578206
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_02.usd",
+      "sha256": "5592f6ee79fa3243a913b6275e99d929573f4a2a9e7840cde73e97ef09c219e9",
+      "bytes": 2727283
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkStrafe_03.usd",
+      "sha256": "5906fa8de538e90247bc9dd7f2b4f112313efc62cb30ca1b474534fdebf05780",
+      "bytes": 2727290
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurnInPlace.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurnInPlace.usd",
+      "sha256": "370d3d8aef5c1673798567466ca96ec36d67a3f780af22edeb7af7e78e2d2624",
+      "bytes": 3370029
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurnInPlace_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurnInPlace_01.usd",
+      "sha256": "33f5ba4a95cecdd7cc1cf75b3740a23c68834e039797d9cf193b01af98ab0051",
+      "bytes": 3370036
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns.usd",
+      "sha256": "2229444820c4efbcc7b6483aba1e1dbaaa1d6ee6e122d13592ac5c11935e8c37",
+      "bytes": 570164
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_01.usd",
+      "sha256": "2047328ce365717f2db0f37408d92dc046ec687db13a76752c53648311ae01ed",
+      "bytes": 570171
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_02.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_02.usd",
+      "sha256": "4f51b50970c19c0dd7c64e454ecde1b469f62aeec132d814c900583e887a8912",
+      "bytes": 614093
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_03.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_03.usd",
+      "sha256": "ca78c4e7813fd0388606733e07cd245d4f86dbfba4babf6ae764fd8051277fe7",
+      "bytes": 614100
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_04.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_04.usd",
+      "sha256": "80e039f38a07c2e80e2c9d684909de484a1c72952411fc964cf72cbc0b5ea1b6",
+      "bytes": 752813
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_05.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_05.usd",
+      "sha256": "0c78314e3858fec93f60a5a03d1f9cdb8ac8fec0a86f0411909a563c11245a95",
+      "bytes": 752820
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_06.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_06.usd",
+      "sha256": "5b7d2fea54d72523a2c781ea4107dbcb2c694891bbf5e74265859da5fc752f57",
+      "bytes": 655712
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_07.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_07.usd",
+      "sha256": "fd8460509d7615b245cde931b30b682b791ba2e44f25a8c97a1e6843696c8390",
+      "bytes": 655719
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_08.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_08.usd",
+      "sha256": "6ac15bc65d540fc37ef7c3af947460e126da0d656ecb521fd9ccd24af2d2d10b",
+      "bytes": 570164
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_09.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_09.usd",
+      "sha256": "d65a4485862557e7e1090704edc888e0f190840300ee6cab971b0574668affc6",
+      "bytes": 570171
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_10.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_10.usd",
+      "sha256": "3378fa760b0fffb1c61ea47245557a39a8a74a980a9afe82504b3ec4d71b18ca",
+      "bytes": 399078
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_11.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_11.usd",
+      "sha256": "caecdd738347f321c7dd0e7052877a33ead80b39b37d7fe73ae27fae930f7b67",
+      "bytes": 399085
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_12.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_12.usd",
+      "sha256": "bf774019a2399117d44d7111c18cd3aaca5ce66ef74f27132814b3ef42aedc6d",
+      "bytes": 1550453
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_13.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_13.usd",
+      "sha256": "6898594673fb8692e7b34e2f5a7f9e4b72b9bfc3a8a46b6208a996e0b462c7b5",
+      "bytes": 1550460
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_14.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_14.usd",
+      "sha256": "eda171f41a344fce4fe908cfefc712c2f86bfd846569191577ea44d984f6e9d3",
+      "bytes": 4944617
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_15.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalk/WalkTurns_15.usd",
+      "sha256": "5b9251477e0a687725bf7f4136054a4a29cb17545911503df66222da1c1beb3c",
+      "bytes": 4944611
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowBackward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowBackward.usd",
+      "sha256": "399567e889ac839c925565913a51b8c3de7430185165530f881031ffd5092f2d",
+      "bytes": 1383267
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowBackward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowBackward_01.usd",
+      "sha256": "dadd611740826f48359710258fd42c2f59163b79aff27e739b764a66b3bf8901",
+      "bytes": 1383274
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowForward.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowForward.usd",
+      "sha256": "9a38582c1c7341c0710f6fa628f0c42c8015c1a9414a2aa74b2a167c5caa075b",
+      "bytes": 1615055
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowForward_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowForward_01.usd",
+      "sha256": "c3febefb227063499d4f0e0efbd26eda1ee98a2e0cd7de81672fea544e544068",
+      "bytes": 1615062
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowRandom.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowRandom.usd",
+      "sha256": "b63ac5961700c5950b51cc1b7ab3bb39f537b6a4d31bc5a9832876844a3aac49",
+      "bytes": 2102312
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowRandom_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowRandom_01.usd",
+      "sha256": "59006d719c91aa7deb9be02270d39c76fad992e73b6a90c07b13ab8404504dcf",
+      "bytes": 2102869
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowReposition.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowReposition.usd",
+      "sha256": "0575ab28fd6ecb8ec7f7bde48518ad4638a99daa2eafc7021ebe5a12b0ede01b",
+      "bytes": 2308630
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowReposition_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowReposition_01.usd",
+      "sha256": "5d797e3fcb821cd0f2d8c0a366ca5793e8dc191e6c3f38c44e175388a93a258c",
+      "bytes": 2308048
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSnake.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSnake.usd",
+      "sha256": "10265953e2b50bf5424bb2bb80d0b332272d68117a9445cc73d161d69c9a3b7d",
+      "bytes": 1119669
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSnake_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSnake_01.usd",
+      "sha256": "e736c21a5b815c3c881adccba3fb94b246c94ad3b0ba711cac76e8873f69817b",
+      "bytes": 1120265
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSpiral.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSpiral.usd",
+      "sha256": "44fcbd0efe6ebabe5829621172ad49bd50ec407a12395f4c5fa488a76988b3b6",
+      "bytes": 872311
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSpiral_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowSpiral_01.usd",
+      "sha256": "2060e73bd805b89fd385816df0a5a8c6671d59372a4e480d6a6add2a3df4e99c",
+      "bytes": 872318
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowTurns.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowTurns.usd",
+      "sha256": "132cf44dab386c09a21bd533ab028d8d73a03eee4b19cb102ec3c08429644384",
+      "bytes": 666518
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowTurns_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/MoveWalkSlow/WalkSlowTurns_01.usd",
+      "sha256": "fb1e7ee076985c07940ac4051756126ee611c1f48f366c1a29d5253015b47284",
+      "bytes": 667113
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightBothHands.usd",
+      "sha256": "3ae8bf770f6d009f99c801755f5793d30b1ddbe0cedfa051c175b16701bb53a4",
+      "bytes": 464234
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightBothHands_01.usd",
+      "sha256": "80fe3c8db640f8cdced53dde6c52eb06510d3e3611672ae40d2b0f8331fbd269",
+      "bytes": 2688350
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightLeftHand.usd",
+      "sha256": "f078da0235bf6de965dcc51b1276b11edd2917f5ce4cf6cb169c8be0e16323a0",
+      "bytes": 464234
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectChestHeightRightHand.usd",
+      "sha256": "f296220eb386c9d2cef3f86b5f008c5da085f8f07a0b5587ddc297ba910842af",
+      "bytes": 464231
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightBothHands.usd",
+      "sha256": "f8031a5501970f7064ffe2bc964c0d1c48cbb781817eca2af7a922211e51881b",
+      "bytes": 1176376
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightBothHands_01.usd",
+      "sha256": "75abf9923dd50a18506c25018ba956f89d2a62fea1999573653b8adbbc669595",
+      "bytes": 1835258
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightLeftHand.usd",
+      "sha256": "dd1dcf5174c957cab8e325d44cdbe6d6600f6d8e430ebc991d7dcdb3b8b7091b",
+      "bytes": 438822
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectHeadHeightRightHand.usd",
+      "sha256": "f8a4073127de29a2971fb30d6ee6fa7e9ce279cf9fa6992dfe852d760928bc9a",
+      "bytes": 438825
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightBothHands.usd",
+      "sha256": "6be184fbdbf9aa330fa4903d32aaef19eeb23d7cb5936cd4325711b17da9bbfd",
+      "bytes": 2501120
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightLeftHand.usd",
+      "sha256": "5cba61904c2ddeb14e2918b2fdcfefb42696c6d763fe7f2b9afc2073a1032c26",
+      "bytes": 494301
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectKneeHeightRightHand.usd",
+      "sha256": "38c51380140aad693a5d6f3e10ec0b50411f0c5c1ae9caf0942df1b6c71690ec",
+      "bytes": 494299
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightBothHands.usd",
+      "sha256": "bd69af09f226d21d550962ce9c32b462bc3a44d8d8deec001821286b50f261cf",
+      "bytes": 2378578
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightLeftHand.usd",
+      "sha256": "d914988bfda1862a5ff43e74191c33774b1e8345aa8916423a4768276097b6ba",
+      "bytes": 2013294
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectShinHeightRightHand.usd",
+      "sha256": "a92a50b6bbc64517e85eea94e46f84e0f46564b31ccdcce3df453bb80aae36bc",
+      "bytes": 2013290
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightBothHands.usd",
+      "sha256": "ace888a8c8f202aba6a7a8d47023e299c92834c2cec96db1bebf22c7bd1b4507",
+      "bytes": 878111
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightLeftHand.usd",
+      "sha256": "47786fcf47c7bc93fe30fa81d22149dead11cf55c529c6c6e4b3a3039d88e5c5",
+      "bytes": 454998
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectStomachHeightRightHand.usd",
+      "sha256": "1336a86dbb3d424b4ba144ccb992b1f821e104828b866bfa3f3690ffae355af9",
+      "bytes": 464237
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightBothHands.usd",
+      "sha256": "1e71df198ddf50768ddaef21ba2b5b0c0539ffe68cf35c2aa7bf6cc3937d0340",
+      "bytes": 1567076
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightLeftHand.usd",
+      "sha256": "913b6424c598fd8e5da6a700334afa3735899e1526b2994371d5a7821042bc13",
+      "bytes": 485050
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectThighHeightRightHand.usd",
+      "sha256": "eb5987a4649961cefc021ea0fa2c44c1b83f8aa7fe7beb291f72ba756f0b07f7",
+      "bytes": 485046
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightBothHands.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightBothHands.usd",
+      "sha256": "63551084a6447ec2c911765cc25aab5b68b128e9f94ad7a8933f3de987630779",
+      "bytes": 1019127
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightBothHands_01.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightBothHands_01.usd",
+      "sha256": "e7655faf88339e127a5c6df98d069ffaa998da6141659fb5340f345a4ce57aa9",
+      "bytes": 13982495
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightLeftHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightLeftHand.usd",
+      "sha256": "6d8f35e86d596f8e96f83698b4f37b194fb55908c44c57b432745a03e4fbabff",
+      "bytes": 464239
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightRightHand.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/PickupPlaceObject/PickupPlaceObjectWaistHeightRightHand.usd",
+      "sha256": "57e1ae28a1895959869ac6c8d093cab675e3521a7629ad2db1cd355181ee6d93",
+      "bytes": 454992
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Ride/RideBike.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Ride/RideBike.usd",
+      "sha256": "7bbbcd2cf056771ae2a33d984f498da784e0c85a8d1430ead2873a23b9f4dd2d",
+      "bytes": 638725
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandChair.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandChair.usd",
+      "sha256": "c141ab843446c02e208592282de209f1e479a44baaca2d524847e5d5769dc04d",
+      "bytes": 1026371
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandGround.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandGround.usd",
+      "sha256": "5baf3a8fab188460fe38209718e2d38c62f061872901527992c67be645cd84d4",
+      "bytes": 1258755
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandStool.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/BuiltinActions/Sit/SitAndStandStool.usd",
+      "sha256": "13fc4abc0e07182f2c4c4a5cc17fdd6cb1934a3638a9cb7f56633d8b552d65a4",
+      "bytes": 1306143
+    },
+    {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/HumanMotionLibrary.usd",
+      "local": "assets/people-v2/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/People/MotionLibrary/HumanMotionLibrary.usd",
+      "sha256": "9a6f8b5df9426d609f29c48feace8933d636f8c7a9b15711b88313550bb49b8d",
+      "bytes": 127208
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "redistribution": "Only URLs/checksums are shipped. Fetch from the official source subject to NVIDIA license terms."
+}

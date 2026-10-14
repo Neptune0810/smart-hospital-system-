@@ -1,0 +1,217 @@
+{
+  "version": "hospital-delivery-v2",
+  "methods": [
+    "rule",
+    "agnes_once",
+    "agnes_feedback"
+  ],
+  "seeds": [
+    101,
+    202
+  ],
+  "cases": [
+    {
+      "id": "normal_single",
+      "group": "normal",
+      "initial": [
+        "station_a"
+      ],
+      "events": []
+    },
+    {
+      "id": "normal_capacity",
+      "group": "normal",
+      "initial": [
+        "station_a",
+        "station_c"
+      ],
+      "events": []
+    },
+    {
+      "id": "normal_refill",
+      "group": "normal",
+      "initial": [
+        "station_a",
+        "station_b",
+        "station_c"
+      ],
+      "events": []
+    },
+    {
+      "id": "normal_deadline",
+      "group": "normal",
+      "initial": [
+        "station_c",
+        "station_a"
+      ],
+      "deadline": 65,
+      "events": []
+    },
+    {
+      "id": "urgent_on_route",
+      "group": "urgent",
+      "initial": [
+        "station_b"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "navigation_elapsed_sim": 8
+          },
+          "kind": "urgent",
+          "station": "station_a"
+        }
+      ]
+    },
+    {
+      "id": "urgent_full_load",
+      "group": "urgent",
+      "initial": [
+        "station_b",
+        "station_c"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "navigation_elapsed_sim": 8,
+            "loaded": 2
+          },
+          "kind": "urgent",
+          "station": "station_a"
+        }
+      ]
+    },
+    {
+      "id": "urgent_after_handoff",
+      "group": "urgent",
+      "initial": [
+        "station_a",
+        "station_b"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "delivered": 1
+          },
+          "kind": "urgent",
+          "station": "station_c"
+        }
+      ]
+    },
+    {
+      "id": "receiver_recovery",
+      "group": "receiver",
+      "initial": [
+        "station_a",
+        "station_c"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "sim": 0
+          },
+          "kind": "receiver",
+          "station": "station_a",
+          "available": false
+        },
+        {
+          "trigger": {
+            "sim": 45
+          },
+          "kind": "receiver",
+          "station": "station_a",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "receiver_midroute",
+      "group": "receiver",
+      "initial": [
+        "station_b",
+        "station_a"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "sim": 8
+          },
+          "kind": "receiver",
+          "station": "station_b",
+          "available": false
+        },
+        {
+          "trigger": {
+            "sim": 80
+          },
+          "kind": "receiver",
+          "station": "station_b",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "receiver_permanent",
+      "group": "receiver",
+      "initial": [
+        "station_a",
+        "station_c"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "sim": 0
+          },
+          "kind": "receiver",
+          "station": "station_a",
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "boundary_handoff",
+      "group": "boundary",
+      "initial": [
+        "station_a"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "loaded": 1
+          },
+          "kind": "invalid_handoff"
+        }
+      ]
+    },
+    {
+      "id": "boundary_capacity_idempotency",
+      "group": "boundary",
+      "initial": [
+        "station_a",
+        "station_b",
+        "station_c"
+      ],
+      "events": [
+        {
+          "trigger": {
+            "loaded": 2
+          },
+          "kind": "capacity_duplicate"
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "simulation_seconds": 600,
+    "wall_seconds": 1200,
+    "decisions": 60
+  },
+  "receiver_permanent_failure_after_sim": 150,
+  "rule": "urgent first then earliest deadline; capacity aware; unavailable receivers skipped",
+  "once": "one initial order permutation; future orders appended; no feedback reorder",
+  "feedback": "real AGH resumed MCP sessions on navigation terminal or injected event",
+  "model": "agnes-3.0-flash",
+  "seed_scope": "order deadline jitter; model sampling seed unavailable",
+  "handoff": "simulated; station and package checked by state service",
+  "protocol_revision_note": "Before valid experimental outcomes: urgent_on_route/full_load fire eight simulation seconds after a real active delivery navigation, avoiding model cold-start latency injecting before departure. All trigger conditions are conjunctive."
+}

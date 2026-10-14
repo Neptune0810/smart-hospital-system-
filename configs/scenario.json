@@ -1,0 +1,16 @@
+{
+  "ros_domain_id": 73,
+  "namespace": "carter1",
+  "capacity": 2,
+  "arrival_m": 0.5,
+  "max_wall_seconds": 1200,
+  "max_sim_seconds": 600,
+  "model_decisions": 60,
+  "map": {
+    "origin": [
+      -49.625,
+      -4.675
+    ],
+    "resolution": 0.05
+  }
+}

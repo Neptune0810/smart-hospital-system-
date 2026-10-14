@@ -1,0 +1,17 @@
+{
+  "schema": "smart-hospital-build-tools-files-v1",
+  "files_sha256": {
+    "bootstrap-requirements.lock.txt": "57abccbc3de351b8af909a24659f585a14682c055de7e78281736b324bb624c8",
+    "build_runtime.py": "cd5c00cc4abcbd13dd7878be920abc5323625854cffa8498f30aa6ab809ddf37",
+    "install_plugins.py": "f1cc36f64ce5b4de3681150d46950fe6399d08463944d5475c11eccaa82c3a6b",
+    "README.md": "650bde47be192745081b6da55ab1ca1347afe5c36841f681b881f183650ddd6d",
+    "requirements.lock.txt": "d3e74941da9d24066439a0ab0ca5c7194890355f0dbee6b4dccc76c31c7f9cf9",
+    "source-patch-provenance.json": "98831037c35a08e77bb7d10be493f5fb62965d513ac93a9f6797d59dc02b067a",
+    "static-verification.json": "ecb803fca5ffc761d0a58fa9a1250fc2b7717800dc0b1d36b54d55c51fae6150",
+    "upstream-package.json": "a75ea1a86071309849166607fe284e9506d9352e7e1882d8393482025dd5f23e",
+    "patches/hospital-smart-ward.patch": "0cd651498526b61c9ef85482d0df11dcad8502f5013011f33b98b14e61d6a420",
+    "patches/mhs-client.json": "e3c19a5726d0385064415f7ffd2a8b94af4ad8cef70c313a7fd5684ff34525d2",
+    "patches/web-app.ts": "ba66feb996d105ce59f3de829d46120ceca49fb3feec412464abef13c55ac0d5",
+    "patches/worker-main.ts": "32510046fd13d49adc47d349961cedb000f721f4840fd7bff39b02743aa9f411"
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "version": "hospital-layout-20261013.2",
+  "source": "Official Isaac 6.0 hospital USD furniture and doorway audit; functional conversion with original walls/furniture retained",
+  "points": [
+    "depot",
+    "station_a",
+    "station_b",
+    "station_c",
+    "pharmacy",
+    "lab",
+    "emergency",
+    "room301",
+    "room302",
+    "room303",
+    "room304",
+    "waiting"
+  ],
+  "zones": [
+    {
+      "id": "waiting_corridor",
+      "label": "门厅候诊区",
+      "kind": "crowd",
+      "bounds": [
+        -10,
+        -2,
+        5,
+        5.4
+      ],
+      "speed_limit": 0.25
+    },
+    {
+      "id": "quiet_corridor",
+      "label": "西病区安静走廊",
+      "kind": "quiet",
+      "bounds": [
+        -42.1,
+        14,
+        -38.4,
+        32
+      ],
+      "speed_limit": 0.2
+    },
+    {
+      "id": "quiet_east",
+      "label": "东病区安静走廊",
+      "kind": "quiet",
+      "bounds": [
+        17.3,
+        13.5,
+        20.8,
+        30
+      ],
+      "speed_limit": 0.2
+    },
+    {
+      "id": "east_corridor",
+      "label": "东病区通道",
+      "kind": "corridor",
+      "bounds": [
+        17.3,
+        21.5,
+        20.8,
+        24.5
+      ],
+      "speed_limit": 0.5
+    }
+  ],
+  "people_seed": 101,
+  "people_count": 4,
+  "rooms": [
+    {
+      "id": "supply_room",
+      "label": "物资库",
+      "english": "SUPPLY STORE",
+      "bounds": [
+        -14.4,
+        5.5,
+        -10.8,
+        8.85
+      ],
+      "handoff_anchor": [
+        -12,
+        8.85
+      ],
+      "sign": {
+        "pose": [
+          -12,
+          9.1,
+          2.2,
+          3.141592653589793
+        ]
+      },
+      "scene_anchors": [
+        "SM_ShelfSet_01a_18",
+        "SM_SupplyCart_01e_21"
+      ],
+      "basis": "物资架和补给车房间，功能改造为洁净物资交接库。"
+    },
+    {
+      "id": "nurse_a",
+      "label": "A 护士站",
+      "english": "NURSE A - CENTRAL",
+      "bounds": [
+        -10.8,
+        12.4,
+        -6.2,
+        16.2
+      ],
+      "handoff_anchor": [
+        -8.4,
+        12.4
+      ],
+      "sign": {
+        "pose": [
+          -8.4,
+          12.15,
+          2.25,
+          0
+        ]
+      },
+      "scene_anchors": [
+        "SM_Computer_02b3",
+        "SM_ShelfSet_01a2"
+      ],
+      "basis": "带电脑和补给架的中央支援房间，改造为护理工作区。",
+      "serves": [
+        "emergency",
+        "lab"
+      ]
+    },
+    {
+      "id": "nurse_b",
+      "label": "B 护士站",
+      "english": "NURSE B - WEST",
+      "bounds": [
+        -48.2,
+        18.7,
+        -42.2,
+        22.1
+      ],
+      "handoff_anchor": [
+        -42.1,
+        20.2
+      ],
+      "sign": {
+        "pose": [
+          -41.8,
+          20.2,
+          2.15,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_Chart_Rack_01c2"
+      ],
+      "basis": "西侧两间病房之间的记录架工作区，设护理交接点。",
+      "serves": [
+        "room301",
+        "room302"
+      ]
+    },
+    {
+      "id": "nurse_c",
+      "label": "C 护士站",
+      "english": "NURSE C - EAST",
+      "bounds": [
+        11.16,
+        25.85,
+        17.27,
+        29.45
+      ],
+      "handoff_anchor": [
+        17.27,
+        27.5
+      ],
+      "sign": {
+        "pose": [
+          17.6,
+          27.5,
+          2.2,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_Computer_02b12",
+        "SM_ShelfSet_01a19"
+      ],
+      "basis": "东侧带电脑、座椅和补给架且无病床的房间，改造为护理工作区。",
+      "serves": [
+        "room303",
+        "room304"
+      ]
+    },
+    {
+      "id": "pharmacy_room",
+      "label": "药房",
+      "english": "PHARMACY",
+      "bounds": [
+        -10.8,
+        5.5,
+        3.2,
+        8.85
+      ],
+      "handoff_anchor": [
+        -6,
+        5.5
+      ],
+      "sign": {
+        "pose": [
+          -6,
+          5.05,
+          2.15,
+          0
+        ]
+      },
+      "scene_anchors": [
+        "Pharmacy_Low3",
+        "Pharmacy_Low4",
+        "SM_MedicalCabinet_01a_40"
+      ],
+      "basis": "沿用原场景药房柜台、药瓶和药柜；机器人停在柜台外。"
+    },
+    {
+      "id": "lab_reception",
+      "label": "检验标本交接",
+      "english": "SPECIMEN RECEPTION",
+      "bounds": [
+        20.9,
+        -4.4,
+        27,
+        3.2
+      ],
+      "handoff_anchor": [
+        20.9,
+        0
+      ],
+      "sign": {
+        "pose": [
+          20.55,
+          0,
+          2.2,
+          -1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_Desk_04a_112",
+        "SM_MedicalCabinet_01a3_158"
+      ],
+      "basis": "原医用办公房改造为封装标本交接点；不声称已有完整检验仪器。"
+    },
+    {
+      "id": "emergency_room",
+      "label": "急诊接收",
+      "english": "EMERGENCY",
+      "bounds": [
+        20.9,
+        3.2,
+        27,
+        7.1
+      ],
+      "handoff_anchor": [
+        20.9,
+        5.3
+      ],
+      "sign": {
+        "pose": [
+          20.55,
+          5.3,
+          2.2,
+          -1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "Geo_M_Bed_4"
+      ],
+      "basis": "邻近东侧出入口的原治疗床房间，用作急诊物资接收。"
+    },
+    {
+      "id": "ward301",
+      "label": "301 病房",
+      "english": "WARD 301",
+      "bounds": [
+        -48.2,
+        14.7,
+        -42.2,
+        18.4
+      ],
+      "handoff_anchor": [
+        -42.15,
+        16.84
+      ],
+      "sign": {
+        "pose": [
+          -41.8,
+          16.84,
+          2.15,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_HospitalBed_02d4"
+      ],
+      "basis": "原场景实际病床房间，门外交接。"
+    },
+    {
+      "id": "ward302",
+      "label": "302 病房",
+      "english": "WARD 302",
+      "bounds": [
+        -48.2,
+        22.1,
+        -42.2,
+        25.8
+      ],
+      "handoff_anchor": [
+        -42.15,
+        24.22
+      ],
+      "sign": {
+        "pose": [
+          -41.8,
+          24.22,
+          2.15,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_HospitalBed_02d5"
+      ],
+      "basis": "原场景实际病床房间，门外交接。"
+    },
+    {
+      "id": "ward303",
+      "label": "303 病房",
+      "english": "WARD 303",
+      "bounds": [
+        11.16,
+        13.4,
+        17.27,
+        17.8
+      ],
+      "handoff_anchor": [
+        17.27,
+        16.5
+      ],
+      "sign": {
+        "pose": [
+          17.6,
+          16.5,
+          2.2,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_HospitalBed_02d11"
+      ],
+      "basis": "原场景实际病床房间，门外交接。"
+    },
+    {
+      "id": "ward304",
+      "label": "304 病房",
+      "english": "WARD 304",
+      "bounds": [
+        11.16,
+        17.85,
+        17.27,
+        21.55
+      ],
+      "handoff_anchor": [
+        17.27,
+        20.2
+      ],
+      "sign": {
+        "pose": [
+          17.6,
+          20.2,
+          2.2,
+          1.5707963267948966
+        ]
+      },
+      "scene_anchors": [
+        "SM_HospitalBed_02d12"
+      ],
+      "basis": "原场景实际病床房间，门外交接。"
+    },
+    {
+      "id": "reception",
+      "label": "候诊接待",
+      "english": "RECEPTION",
+      "bounds": [
+        -0.6,
+        2.1,
+        4.6,
+        5.5
+      ],
+      "handoff_anchor": [
+        1.5,
+        2.2
+      ],
+      "sign": {
+        "pose": [
+          1.5,
+          1.95,
+          2.15,
+          0
+        ]
+      },
+      "scene_anchors": [
+        "SM_ReceptionDesk_01b_55",
+        "SM_Chair_02a4",
+        "SM_Chair_02a6"
+      ],
+      "basis": "沿用门厅接待柜台，候诊座椅在柜台西侧。"
+    }
+  ],
+  "design_references": [
+    {
+      "title": "NHS HBN 04-01: local nursing workstations near bed clusters",
+      "url": "https://www.england.nhs.uk/wp-content/uploads/2009/12/HBN_04-01_Final.pdf",
+      "sections": [
+        "4.51-4.53",
+        "5.20",
+        "4.65"
+      ]
+    },
+    {
+      "title": "NHS HBN 12: accessible reception, outpatient circulation and pharmacy",
+      "url": "https://www.england.nhs.uk/wp-content/uploads/2021/05/HBN_12.pdf",
+      "sections": [
+        "3.3-3.6"
+      ]
+    }
+  ],
+  "inspection_views": {
+    "pharmacy": {
+      "eye": [
+        -6,
+        2.6,
+        1.65
+      ],
+      "target": [
+        -6,
+        5.4,
+        1.9
+      ]
+    },
+    "west_wards": {
+      "eye": [
+        -39.5,
+        13.5,
+        1.7
+      ],
+      "target": [
+        -42,
+        24,
+        1.9
+      ]
+    },
+    "ward301": {
+      "eye": [
+        -40.2,
+        15.5,
+        1.6
+      ],
+      "target": [
+        -46.5,
+        16.2,
+        1.4
+      ]
+    },
+    "ward302": {
+      "eye": [
+        -40.2,
+        22.9,
+        1.6
+      ],
+      "target": [
+        -46.5,
+        23.6,
+        1.4
+      ]
+    },
+    "east_wards": {
+      "eye": [
+        19.8,
+        23,
+        1.7
+      ],
+      "target": [
+        16.9,
+        18,
+        1.8
+      ]
+    },
+    "nurse_c": {
+      "eye": [
+        19.8,
+        27.5,
+        1.6
+      ],
+      "target": [
+        13.5,
+        27.5,
+        1.5
+      ]
+    },
+    "reception": {
+      "eye": [
+        -2,
+        -1,
+        1.5
+      ],
+      "target": [
+        1.5,
+        3.5,
+        1.5
+      ]
+    }
+  }
+}

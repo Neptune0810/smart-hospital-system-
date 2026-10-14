@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "instance_id": "smart-hospital-repro-v1",
+  "isaac_home": "",
+  "assets_root": "",
+  "gpu_index": 0,
+  "ros_domain_id": 74,
+  "image": "smart-hospital:humble-repro-v1",
+  "ports": {"api": 4288, "chat": 4289, "hub": 4292, "workbench": 4294, "daemon": 4295}
+}

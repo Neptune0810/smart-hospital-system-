@@ -1,0 +1,9 @@
+{
+  "name": "hospital-mhs",
+  "extends": "standard",
+  "tools": {"core": [], "timeout_ms": 600000},
+  "model": {"prompt_sections": ["environment"], "max_tokens": 2048},
+  "budget": {"max_steps": 60},
+  "approval": {"command_policy": [], "on_unavailable": "deny"},
+  "subagent": {"max_depth": 0}
+}

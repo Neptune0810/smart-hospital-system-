@@ -1,0 +1,25 @@
+{
+  "name": "hospital-mhs-policy",
+  "version": "3.0.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": "./dist/index.mjs",
+  "agnes": {
+    "plugins": [
+      {
+        "export": "hospitalMHS",
+        "id": "ext:hospital-mhs-policy/main",
+        "inject": [
+          "extension"
+        ]
+      }
+    ],
+    "contributions": [
+      {
+        "kind": "preset",
+        "id": "hospital-mhs",
+        "path": "./hospital-mhs.yaml"
+      }
+    ]
+  }
+}

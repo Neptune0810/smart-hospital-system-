@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "operation_id": "presentation-hospital-daylight-v4",
+  "enabled": true,
+  "intensity": 20000.0,
+  "exposure": 1.0
+}

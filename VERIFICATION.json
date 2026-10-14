@@ -1,0 +1,130 @@
+{
+  "schema": "smart-hospital-reproduction-delivery-v1",
+  "verified_date_asia_shanghai": "2026-10-14",
+  "scope": "Clean source checkout, new SDK/home/container/business run on the same existing Linux GPU host and external Isaac installation; not another physical machine, full MHS protocol suite or real Agent acceptance",
+  "overall_status": "installation_and_simulation_passed_navigation_incomplete",
+  "installation": {
+    "full_AGH_MHS_source_build": "passed",
+    "new_SDK_locked_install_import_pipcheck": "passed",
+    "new_home_normal_plugin_install": "passed",
+    "exact_MCP_tool_count": 8,
+    "public_ROS_navigation_image_build": "passed",
+    "image_id": "sha256:ea0b94dee4ac716542c55dd66886bd35d1090753756073586e182ea476ce7a09",
+    "official_base_manifest": "sha256:6b4abb5340e430c632bcf4710fb34996df4f80e502993e5755f8fc59a39c7b2e",
+    "base_loaded_repo_digest": "NA: Docker load does not preserve a public RepoDigest",
+    "official_people_files": 194,
+    "official_people_bytes": 444304007,
+    "exact_MCP_catalog_source": "Direct SDK ClientSession.list_tools against actual project stdio server; no business tool execution",
+    "AGH_normal_mcp_test_safe_tool_count": 0,
+    "real_AGH_session_business_tool_call_verified": false
+  },
+  "runtime": {
+    "run_id": "4721aff0afc04357a684c826f115016e",
+    "new_map_overlay": "passed",
+    "actual_Isaac_version": "6.0.1-rc.7+release.42383.32955d8d.gl",
+    "actual_host": "Ubuntu 22.04.5 LTS; NVIDIA GeForce RTX 4090 D; driver 595.58.03",
+    "nav2_nine_lifecycle_nodes": "active",
+    "exact_eight_devices_fresh": "passed",
+    "first_and_third_person_capture": "passed",
+    "watch_enabled": false
+  },
+  "bounded_navigation": {
+    "status": "failed_or_incomplete",
+    "counts": {
+      "passed": 1,
+      "failed": 1,
+      "NA": 3
+    },
+    "cases": [
+      {
+        "case": "fresh_simulation_and_eight_devices",
+        "status": "passed",
+        "error": null,
+        "reason": null
+      },
+      {
+        "case": "real_arrival_depot",
+        "status": "failed",
+        "error": "TimeoutError('real_arrival_leg_or_qualification_budget_exhausted:depot')",
+        "reason": null
+      },
+      {
+        "case": "same_operation_no_second_navigation",
+        "status": "NA",
+        "error": null,
+        "reason": "Not executed after prior failure; no automatic retry"
+      },
+      {
+        "case": "cancel_actual_motion",
+        "status": "NA",
+        "error": null,
+        "reason": "Not executed after prior failure; no automatic retry"
+      },
+      {
+        "case": "new_goal_after_confirmed_stop",
+        "status": "NA",
+        "error": null,
+        "reason": "Not executed after prior failure; no automatic retry"
+      }
+    ],
+    "failure": "TimeoutError('real_arrival_leg_or_qualification_budget_exhausted:depot')",
+    "arrival_wall_limit_seconds": 900,
+    "global_wall_limit_seconds": 1500,
+    "elapsed_wall_seconds": 929.4746660627425,
+    "initial_stall_root_cause": "not_uniquely_determined",
+    "observed": "12 no-progress reports and recovery spins, then real forward movement; failed to reach depot within unchanged wall limit"
+  },
+  "stop": {
+    "physical_stop_confirmed": true,
+    "scene_speed_mps": 0.0011390820334448925,
+    "scene_angular_speed_rad_s": 4.396793318317799e-05,
+    "stopped_samples": 10,
+    "cleanup_errors": [],
+    "all_project_processes_exited": true,
+    "project_container_running": false
+  },
+  "model_requests_in_new_home": 0,
+  "account_verified": false,
+  "real_Agnes_acceptance": "NA: user deferred own account configuration",
+  "full_MHS_protocol_suite": "NA: not executed in this installation scope",
+  "historical_results_changed": false,
+  "failures_retained": [
+    "official Git/network and build attempts",
+    "original SDK installation failures",
+    "official Docker pull and historical APT lock failures",
+    "normal plugin setup attempts",
+    "45-second cold-start failure",
+    "900-second bounded depot arrival failure"
+  ],
+  "recording": {
+    "frames": 1828,
+    "unique_actual_captures": 884,
+    "first_capture_wall_time": 1791953563.2117803,
+    "last_capture_wall_time": 1791954491.340297,
+    "capture_wall_span": 928.1285166740417,
+    "video": "/mnt/sda/omni-yezh/hospital-delivery-agent/repro-validation/v1/runs/reproduction/runtime-check-1/simulation.mp4",
+    "video_bytes": 29286625,
+    "source": "actual Isaac JPEG frames with original capture stamps; playback is not a wall-clock duration measurement",
+    "ffmpeg_exit_code": 0
+  },
+  "portability": {
+    "independent_roots_with_spaces": 2,
+    "prepared_source_cross_path_mismatches": 0,
+    "old_server_absolute_root_residues_after_prepare": 0,
+    "protected_core_unchanged": 20,
+    "python_syntax_checks": 201,
+    "requires_authors_PC_SSH_key_or_IP": false,
+    "requires_authors_private_base_image_or_compiled_runtime": false,
+    "licensed_external_simulator_assets_and_own_account_required": true,
+    "installed_venv_is_not_relocatable": true
+  },
+  "source_commit": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+  "evidence_links": {
+    "build": "原始证据/runs/reproduction/build-427a294d93a14e819759b91a67bf9b8e/report.json",
+    "sdk": "原始证据/runs/reproduction/build-5bac1abaf6324a73a533d0d38af41d01/report.json",
+    "plugins": "原始证据/runs/reproduction/plugins-f67e456d1d124b3c955a89fcc575b48c/report.json",
+    "navigation": "原始证据/runs/reproduction/runtime-check-1/report.json",
+    "video": "原始证据/runs/reproduction/runtime-check-1/simulation.mp4",
+    "final_stop": "原始证据/runs/reproduction/status-after-stop-final.json"
+  }
+}

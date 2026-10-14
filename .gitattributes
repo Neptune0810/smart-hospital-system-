@@ -1,0 +1,2 @@
+# Preserve source bytes required by frozen preparation hashes.
+* -text

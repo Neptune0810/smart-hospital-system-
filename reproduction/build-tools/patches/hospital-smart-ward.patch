@@ -1,0 +1,265 @@
+diff --git a/packages/ai/src/adapters/pi/index.ts b/packages/ai/src/adapters/pi/index.ts
+index 39b868ea..4cf3c804 100644
+--- a/packages/ai/src/adapters/pi/index.ts
++++ b/packages/ai/src/adapters/pi/index.ts
+@@ -569,6 +569,7 @@ export class PiAdapter extends WireAdapter {
+               if (
+                 w.type === 'error' &&
+                 w.code === 'AUTH' &&
++                opts.retry !== false &&
+                 !emitted &&
+                 !authRecoveryAttempted &&
+                 requestAuth &&
+diff --git a/packages/cli/launch/packaged-host.ts b/packages/cli/launch/packaged-host.ts
+index 0b4c1b78..7d3739ed 100644
+--- a/packages/cli/launch/packaged-host.ts
++++ b/packages/cli/launch/packaged-host.ts
+@@ -121,6 +121,8 @@ export function createPackagedHost(
+     | 'runtimePluginSources'
+     | 'managedExtensionPackageIds'
+     | 'serviceAuthority'
++    | 'inferAdmission'
++    | 'disableSessionTitle'
+   >,
+ ) {
+   const { home, cwd, entryFile, ...resources } = options
+diff --git a/packages/cli/launch/worker-entry.ts b/packages/cli/launch/worker-entry.ts
+index ccc7123a..a06d82ec 100644
+--- a/packages/cli/launch/worker-entry.ts
++++ b/packages/cli/launch/worker-entry.ts
+@@ -9,6 +9,8 @@ const worker =
+   process.env.AGNES_WORKER_KIND === 'probe'
+     ? runRuntimeTargetProbeExecutable()
+     : runWorkerExecutable({
++        // Reviewed packaged Host forwards the project-only admission controls unchanged.
++        projectInferAdmissionVersion: 'smart-ward-v1.89',
+         buildHost: (profile, prompter, resources) =>
+           createPackagedHost(profile, prompter, {
+             home: agnesHome(process.env),
+diff --git a/packages/host/src/assemble.ts b/packages/host/src/assemble.ts
+index d9dea6a6..5ff2021b 100644
+--- a/packages/host/src/assemble.ts
++++ b/packages/host/src/assemble.ts
+@@ -1604,7 +1604,7 @@ export async function assemble(profile: ResolvedProfile, deps: AssembleDeps): Pr
+       verifyRoutes(routes, provider.registry)
+       providerFingerprint = provider.registry.fingerprint()
+     }
+-    const models = modelRuntime({ provider, contractForModel })
++    const models = modelRuntime({ provider, contractForModel }, deps.inferAdmission)
+     const applyModelProfile = async (next: ResolvedProfile): Promise<void> => {
+       const nextRoutes = next.provider.routes?.length
+         ? materializeRoutes(defaultPreset.view, next)
+diff --git a/packages/host/src/assemble/model-runtime.ts b/packages/host/src/assemble/model-runtime.ts
+index d2092da8..c899599c 100644
+--- a/packages/host/src/assemble/model-runtime.ts
++++ b/packages/host/src/assemble/model-runtime.ts
+@@ -6,14 +6,53 @@ type ModelSnapshot = {
+   contractForModel: NonNullable<KernelOptions['contractForModel']>
+ }
+ 
++/** Project/embedder-owned admission. It must commit before Provider dispatch. */
++export type InferAdmission = (
++  request: Parameters<Provider['infer']>[0],
++  options: { signal: AbortSignal },
++) => Promise<void>
++
+ /** One coherent model/contract image for a request, including asynchronous preparation and counting. */
+-export function modelRuntime(initial: ModelSnapshot) {
++export function modelRuntime(initial: ModelSnapshot, inferAdmission?: InferAdmission) {
+   let active = initial
+   const scope = new AsyncLocalStorage<ModelSnapshot>()
+   const current = () => scope.getStore() ?? active
+   const provider: Provider = {
+     models: () => current().provider.models(),
+-    infer: (request, options) => current().provider.infer(request, options),
++    infer: (request, options) => {
++      // Preserve the same model image even when admission yields across a profile publish.
++      const snapshot = current()
++      if (!inferAdmission) return snapshot.provider.infer(request, options)
++      const identity = JSON.stringify([request.sessionKey, request.slot, request.route, request.model, request.derivedHash])
++      return (async function* () {
++        if (options.signal.aborted) {
++          yield { type: 'error' as const, reason: 'aborted' as const, code: 'ABORTED' as const,
++            message: 'project model admission aborted', retryable: false }
++          return
++        }
++        try {
++          await inferAdmission(request, { signal: options.signal })
++        } catch (error) {
++          const aborted = options.signal.aborted
++          const code = aborted ? 'ABORTED' as const
++            : (error as { code?: string })?.code === 'QUOTA' ? 'QUOTA' as const : 'TRANSPORT' as const
++          yield { type: 'error' as const, reason: aborted ? 'aborted' as const : 'error' as const,
++            code, message: 'project model admission rejected', retryable: false }
++          return
++        }
++        if (options.signal.aborted) {
++          yield { type: 'error' as const, reason: 'aborted' as const, code: 'ABORTED' as const,
++            message: 'project model admission aborted after reservation', retryable: false }
++          return
++        }
++        if (identity !== JSON.stringify([request.sessionKey, request.slot, request.route, request.model, request.derivedHash])) {
++          yield { type: 'error' as const, reason: 'error' as const, code: 'FORMAT' as const,
++            message: 'project model request identity changed during admission', retryable: false }
++          return
++        }
++        yield* snapshot.provider.infer(request, { ...options, retry: false })
++      })()
++    },
+     count: (request, options) =>
+       current().provider.count?.(request, options) ?? Promise.resolve({ source: 'unsupported' }),
+   }
+diff --git a/packages/host/src/assembly-deps.ts b/packages/host/src/assembly-deps.ts
+index 487c5dce..33e01cd8 100644
+--- a/packages/host/src/assembly-deps.ts
++++ b/packages/host/src/assembly-deps.ts
+@@ -7,6 +7,7 @@ import type { PlatformBackend, Prompter } from './adapters/index.js'
+ import type { OrdinaryPluginLayers } from './assemble/ordinary-rows.js'
+ import type { PackageLoader } from './assemble/packages.js'
+ import type { ProviderBuildOptions } from './assemble/provider.js'
++import type { InferAdmission } from './assemble/model-runtime.js'
+ import type { AuditSink } from './audit.js'
+ import type { HostLockedPackageMutationOptions } from './computer-use/locked-package-mutation-runtime.js'
+ import type { ExtensionActivationBarrier } from './ext-host/activation-barrier.js'
+@@ -41,6 +42,8 @@ export type AssembleDeps = HostPaths &
+     windowsNodeExecutable?: string
+     crashAt?: string
+     providerFactory?: (p: ResolvedProfile, opts: ProviderBuildOptions) => Provider
++    /** Optional private dispatch gate; never exposed as a model tool or client option. */
++    inferAdmission?: InferAdmission
+     /**
+      * Session workers may assemble without provider.routes so plugin apply can boot. CLI print/TUI
+      * omit this and still fail closed at materializeRoutes.
+diff --git a/packages/web/src/app.ts b/packages/web/src/app.ts
+index 2cc8f599..c3195940 100644
+--- a/packages/web/src/app.ts
++++ b/packages/web/src/app.ts
+@@ -833,6 +833,12 @@ function renderControls(): void {
+         (current ? t('composer.workspace.currentTitle') : t('composer.workspace.select')),
+     },
+   }
++  // Hospital V2 composer controls preserve drafts while denying unbound submissions.
++  const hospitalExpectedComposer = new URL(location.href).searchParams.get('session');
++  if(window.parent !== window && hospitalExpectedComposer && current?.id !== hospitalExpectedComposer) {
++    composerView.send.disabled = true;
++    composerView.send.label = '仅查看 · 回到本轮聊天';
++  }
+   composerRuntime.render(composerView)
+   updateSidebar()
+   if (sessionPending) {
+@@ -2035,6 +2041,12 @@ function imageSubmissionFrameBytes(sessionId: string, content: ContentBlock[], f
+   ).byteLength
+ }
+ function submitComposer(): void {
++  // Hospital V2: never submit robot work into a newly selected/unbound chat.
++  const hospitalExpected = new URL(location.href).searchParams.get('session');
++  if (window.parent !== window && hospitalExpected && current?.id !== hospitalExpected) {
++    showError(new Error('这个聊天仅供查看，请用院递工作台的“回到本轮聊天”发送任务。'));
++    return;
++  }
+   const originalDraft = composerRuntime.getDraft()
+   const input = originalDraft.trim()
+   const attachments = composerRuntime.getAttachmentBlocks()
+@@ -2367,3 +2379,23 @@ run(async () => {
+     else await beginNewDraft(configured)
+   }
+ })
++
++// Hospital workbench session bridge v1: metadata only, no parent-controlled RPC.
++let hospitalLastSessionBridge = '';
++setInterval(() => {
++  if (window.parent === window) return;
++  const message = {type:'hospital-session-v1',session_id:current?.id ?? null,connected};
++  const serialized = JSON.stringify(message);
++  // Heartbeats also let a freshly loaded parent learn the unchanged selection.
++  hospitalLastSessionBridge = serialized;
++  for (const origin of ['http://127.0.0.1:4193','http://127.0.0.1:4194'])
++    window.parent.postMessage(message,origin);
++},500);
++
++// Hospital V2 read-only composer in the embedded workbench.
++setInterval(() => {
++  const expected = new URL(location.href).searchParams.get('session');
++  if (window.parent === window || !expected) return;
++  const readonly = current?.id !== expected;
++  for (const field of document.querySelectorAll<HTMLTextAreaElement>('#composer textarea, textarea#input')) field.readOnly = readonly;
++},500);
+diff --git a/packages/worker-runtime/src/main.ts b/packages/worker-runtime/src/main.ts
+index 35fad33b..e6bf23ef 100644
+--- a/packages/worker-runtime/src/main.ts
++++ b/packages/worker-runtime/src/main.ts
+@@ -1,6 +1,6 @@
+ import { createHash } from 'node:crypto'
+ import { createReadStream, readFileSync } from 'node:fs'
+-import { dirname, join } from 'node:path'
++import { dirname, join, resolve } from 'node:path'
+ import type { Duplex } from 'node:stream'
+ import { fileURLToPath, pathToFileURL } from 'node:url'
+ import { domainFailureFromUnknown } from '@agnes/error-sanitization'
+@@ -92,6 +92,9 @@ export type WorkerHostSkillResources = Readonly<{
+   runtimePluginCatalogue?: NonNullable<HostOptions['runtimePluginCatalogue']>
+   runtimePluginSources?: NonNullable<HostOptions['runtimePluginSources']>
+   managedExtensionPackageIds?: NonNullable<HostOptions['managedExtensionPackageIds']>
++  /** Project-scoped admission/title controls forwarded by the trusted executable composition. */
++  inferAdmission?: HostOptions['inferAdmission']
++  disableSessionTitle?: HostOptions['disableSessionTitle']
+   /** Trusted daemon-to-worker authority for narrowly scoped surface service calls. */
+   serviceAuthority?: NonNullable<HostOptions['serviceAuthority']>
+ }>
+@@ -105,6 +108,8 @@ export type WorkerHostDeps = {
+   extensionLoader?: { import(file: string): Promise<Record<string, unknown>> }
+   hostRoot?: string
+   log?: Record<'debug' | 'info' | 'warn' | 'error', (msg: string) => void>
++  /** Internal trusted-executable capability, not an environment or account approval option. */
++  projectInferAdmissionVersion?: 'smart-ward-v1.89'
+   /** Alternate executable composition; callers must retain verified package assembly. */
+   buildHost?: (
+     profile: ResolvedProfile,
+@@ -213,6 +218,31 @@ export async function runWorker(
+       code: 'E_WORKSPACE_REQUIRED',
+     })
+   const cwd = resourceWorkspaceRoot ?? profile.dataDir
++  // Project-only versioned dispatch gate. The supervisor inherits this explicit
++  // flag from the scoped launcher; it is not an account/profile approval setting.
++  let hospitalAdmission: Pick<HostOptions, 'inferAdmission' | 'disableSessionTitle'> = {}
++  if (!resourceLifecycleWorker && env.HOSPITAL_MODE === 'smart-ward-v1'
++      && env.HOSPITAL_INFER_ADMISSION !== 'smart-ward-v1.89')
++    throw new Error('smart ward worker requires versioned model admission')
++  if (!resourceLifecycleWorker && env.HOSPITAL_INFER_ADMISSION !== undefined) {
++    const projectRoot = '/mnt/sda/omni-yezh/hospital-delivery-agent'
++    const projectHome = projectRoot + '/agent/agh-home-mhs/'
++    if (env.HOSPITAL_INFER_ADMISSION !== 'smart-ward-v1.89'
++        || env.HOSPITAL_MODE !== 'smart-ward-v1' || env.HOSPITAL_ROOT !== projectRoot
++        || profile.name !== 'local-dev' || !resolve(profileFile).startsWith(projectHome)
++        || !resolve(profile.dataDir).startsWith(projectHome)
++        || (deps.buildHost && deps.projectInferAdmissionVersion !== 'smart-ward-v1.89'))
++      throw new Error('model admission project scope mismatch')
++    const module = await import(pathToFileURL(join(projectRoot, 'mhs/model_admission.mjs')).href)
++    if (module.ADMISSION_VERSION !== 'smart-ward-v1.89'
++        || typeof module.createHospitalInferAdmission !== 'function')
++      throw new Error('model admission helper version mismatch')
++    hospitalAdmission = {
++      inferAdmission: module.createHospitalInferAdmission({ projectRoot }),
++      // This upstream field is explicitly test-only. This is a recorded project patch.
++      disableSessionTitle: true,
++    }
++  }
+ 
+   const link = await io.connect(socketPath)
+   const send = (frame: unknown): void => {
+@@ -405,6 +435,7 @@ export async function runWorker(
+           ...(bootResources ? { skillResources: bootResources.skillResources } : {}),
+           ...(workerServiceAuthority ? { serviceAuthority: workerServiceAuthority } : {}),
+           ...(skillContribution ? { skillContribution } : {}),
++          ...hospitalAdmission,
+         })
+       : (() => {
+           // Resource-control workers and embedders with a custom buildHost never import extension
+@@ -419,6 +450,7 @@ export async function runWorker(
+                 }
+               : createLoader({ cacheDir: profile.cacheDir, hostRoot, agnesVersion: '0.0.0' }))
+           return createHost(profile, {
++            ...hospitalAdmission,
+             dataDir: profile.dataDir,
+             profileDir,
+             workspaceRoot: cwd,

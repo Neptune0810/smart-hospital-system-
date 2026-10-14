@@ -1,0 +1,101 @@
+{
+  "commit": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+  "files": [
+    {
+      "path": "packages/ai/src/adapters/pi/index.ts",
+      "upstream_sha256": "11cccc69e1e3781b8bb5bd4451c07f5d77c3dd889b83a614bb7ccf6a512f9f8b",
+      "deployed_sha256": "f19b06cd6caab2e333a6f661c8e3e2a31dbebfe2637576518ba1136cb75d8839",
+      "deployed_bytes": 32773
+    },
+    {
+      "path": "packages/cli/launch/packaged-host.ts",
+      "upstream_sha256": "1d2065a6685e709282fda3de8b89c3282516ba360e8c7fbc1727ca600700eef0",
+      "deployed_sha256": "8ec2a23dde61bfff7d9cce109c57af1d9f8e7ed71b7be418b7a834d5dd7cd01c",
+      "deployed_bytes": 5112
+    },
+    {
+      "path": "packages/cli/launch/worker-entry.ts",
+      "upstream_sha256": "acc59612af9ccacc870c6409b8a58d52fc27ba38061ce04e26b3a54a524c52df",
+      "deployed_sha256": "f3f6516b7db32539b37a5c217991a2f20b173069f0929baf526c644503a5bf7f",
+      "deployed_bytes": 1161
+    },
+    {
+      "path": "packages/host/src/assemble.ts",
+      "upstream_sha256": "4ac4e2c345d8acf8f719b767df44b0c440b76bea13370845dd3e40957e69598c",
+      "deployed_sha256": "9d9a65ba90216b825f1fc35e0681815f47190975ba31f0b183447da6ec374c07",
+      "deployed_bytes": 111224
+    },
+    {
+      "path": "packages/host/src/assemble/model-runtime.ts",
+      "upstream_sha256": "b17954adad19c5ed022bf6d74372ef14943de185f9283444302b001df7c0d98b",
+      "deployed_sha256": "a844420d16df5bc3adc9d6002008a1a3ef5bacd9eb1bc44fd0fc527461e725aa",
+      "deployed_bytes": 3138
+    },
+    {
+      "path": "packages/host/src/assembly-deps.ts",
+      "upstream_sha256": "f73c80d5cd86ca5912ae7f82e305b8a0cdc2a4f5de2d84b496296ed730ed0c4c",
+      "deployed_sha256": "108afc4a92c9addb089f7ece2b7c6e68fe92c7bbf6e42421b5f02edf797f057e",
+      "deployed_bytes": 5820
+    },
+    {
+      "path": "packages/web/src/app.ts",
+      "upstream_sha256": "8d5730800d1d11f8fa21fe6a83226a7dd810c56ba33f3664d943fd82dfc3b4f8",
+      "deployed_sha256": "ba66feb996d105ce59f3de829d46120ceca49fb3feec412464abef13c55ac0d5",
+      "deployed_bytes": 96279
+    },
+    {
+      "path": "packages/worker-runtime/src/main.ts",
+      "upstream_sha256": "6ac356d87e5db3e24fce5b81fe558fe9c0a4bc85b2556f0455f5ff54c877f0bb",
+      "deployed_sha256": "32510046fd13d49adc47d349961cedb000f721f4840fd7bff39b02743aa9f411",
+      "deployed_bytes": 40349
+    },
+    {
+      "path": "packages/mhs/plugin/client/agnes.client.json",
+      "upstream_sha256": "c14cda3fcd2f3a852b8b1f5de913db21bd58612948b782042e01c52fce697f15",
+      "deployed_sha256": "e3c19a5726d0385064415f7ffd2a8b94af4ad8cef70c313a7fd5684ff34525d2",
+      "deployed_bytes": 384
+    },
+    {
+      "path": "package.json",
+      "upstream_sha256": "a75ea1a86071309849166607fe284e9506d9352e7e1882d8393482025dd5f23e",
+      "deployed_sha256": "a75ea1a86071309849166607fe284e9506d9352e7e1882d8393482025dd5f23e",
+      "deployed_bytes": 963
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "upstream_sha256": "fc8dfe6d4946cca91dfe6af54ef093ab1c19e24b947f1f82240dc1c3d19db9ff",
+      "deployed_sha256": "fc8dfe6d4946cca91dfe6af54ef093ab1c19e24b947f1f82240dc1c3d19db9ff",
+      "deployed_bytes": 224813
+    }
+  ],
+  "schema": "smart-hospital-source-patch-provenance-v1",
+  "upstream_url": "https://github.com/AgnesAI-Labs/agnes-harness.git",
+  "verification_source": "read-only deployed project Git checkout; no runtime or account copy",
+  "node": "v24.14.0",
+  "pnpm": "10.34.5",
+  "official_pnpm_lock_sha256": "fc8dfe6d4946cca91dfe6af54ef093ab1c19e24b947f1f82240dc1c3d19db9ff",
+  "patch": {
+    "path": "patches/hospital-smart-ward.patch",
+    "sha256": "0cd651498526b61c9ef85482d0df11dcad8502f5013011f33b98b14e61d6a420"
+  },
+  "purposes": {
+    "packages/ai/src/adapters/pi/index.ts": "Pass versioned bounded model-request admission to Pi inference",
+    "packages/cli/launch/packaged-host.ts": "Pass trusted model admission authority through packaged host",
+    "packages/cli/launch/worker-entry.ts": "Resolve official packaged worker entry alongside CLI",
+    "packages/host/src/assemble.ts": "Attach model-admission hooks to host assembly",
+    "packages/host/src/assemble/model-runtime.ts": "Preserve request metering and fail-closed admission checks",
+    "packages/host/src/assembly-deps.ts": "Type/version model-admission authority",
+    "packages/web/src/app.ts": "Emit bound-session UI metadata and deny editing historical embedded sessions",
+    "packages/worker-runtime/src/main.ts": "Require versioned smart-ward authority in packaged worker",
+    "packages/mhs/plugin/client/agnes.client.json": "Nonsecret client Hub address configuration only"
+  },
+  "upstream_bundle": {
+    "path": "vendor/agnes-harness.bundle",
+    "sha256": "5a178d419bba25977ee5d3cc5a654b473e9d9bbca1fd387f29040182e0594c07",
+    "bytes": 26060728,
+    "official_commit": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+    "official_tree": "e44494fd9b523c3a9141a453856504621d89564d",
+    "shallow_boundary": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+    "contains": "Full official source tree; intentionally absent ancestor history; no production dirty files or credentials."
+  }
+}

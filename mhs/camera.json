@@ -1,0 +1,8 @@
+{
+  "height_m": 1.8,
+  "focal_length_mm": 12.0,
+  "look_at_height_m": 0.6,
+  "back_distance_m": 2.4,
+  "side_offset_m": 0.65,
+  "look_ahead_m": 0.8
+}

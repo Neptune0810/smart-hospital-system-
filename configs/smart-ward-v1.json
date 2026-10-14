@@ -1,0 +1,28 @@
+{
+  "version": "smart-ward-v1.0.0",
+  "mode": "smart-ward-v1",
+  "sampling_hz": 1,
+  "freshness_seconds": 3,
+  "lights": {
+    "normal_percent": 60,
+    "low_threshold": 35,
+    "recovery_threshold": 50,
+    "consecutive_samples": 3,
+    "attempt_limit": 2,
+    "wait_sim_seconds": 30,
+    "wait_wall_seconds": 60
+  },
+  "budgets": {
+    "model_requests": 60,
+    "sim_seconds": 2400,
+    "wall_seconds": 3600
+  },
+  "cabinet": {
+    "pickup_capacity": 2,
+    "receive_capacity": 6,
+    "receiver_wait_sim_seconds": 150
+  },
+  "specimen_deadlines": {"normal": 900, "urgent": 300},
+  "source": "simulation_state",
+  "illumination_source": "simulation_model"
+}

@@ -1,0 +1,83 @@
+{
+  "updated_wall": 1791828117.114068,
+  "station_geometry_sha256": "f5e11798d7ea7475e9d189d7e954fe569c9c54e81cf1f2ffc8b611434b40d41b",
+  "scope": "Actual MHS/Nav2 arrivals matching current coordinates; no Agent delivery claim or guarantee of future arrivals",
+  "points": {
+    "depot": {
+      "navigation_status": "arrival_verified",
+      "arrival_evidence": "runs/mhs-v2/qualification/20261013-014632/report.json",
+      "latest_attempt": {
+        "report": "runs/mhs-v2/qualification/20261013-014632/report.json",
+        "passed": true,
+        "reason": "action_status_4"
+      }
+    },
+    "station_a": {
+      "navigation_status": "arrival_verified",
+      "arrival_evidence": "runs/mhs-v2/qualification/20261013-014632/report.json",
+      "latest_attempt": {
+        "report": "runs/mhs-v2/qualification/20261013-014632/report.json",
+        "passed": true,
+        "reason": "action_status_4"
+      }
+    },
+    "station_b": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "station_c": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "pharmacy": {
+      "navigation_status": "arrival_verified",
+      "arrival_evidence": "runs/mhs-v2/qualification/20261013-014632/report.json",
+      "latest_attempt": {
+        "report": "runs/mhs-v2/qualification/20261013-014632/report.json",
+        "passed": true,
+        "reason": "action_status_4"
+      }
+    },
+    "lab": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "emergency": {
+      "navigation_status": "arrival_verified",
+      "arrival_evidence": "runs/mhs-v2/qualification/20261012-150725/report.json",
+      "latest_attempt": {
+        "report": "runs/mhs-v2/qualification/20261012-150725/report.json",
+        "passed": true,
+        "reason": "action_status_4"
+      }
+    },
+    "room301": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "room302": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "room303": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "room304": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    },
+    "waiting": {
+      "navigation_status": "not_run",
+      "arrival_evidence": null,
+      "latest_attempt": null
+    }
+  }
+}

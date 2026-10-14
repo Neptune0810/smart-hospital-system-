@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { allowTool } from './scope.js';
+for(const name of ['shell','read','write','http','code_mode','hospital_shell','set_device'])assert.equal(allowTool({name,args:{device:'hospital-robot-01'}}).allow,false,name);
+for(const name of ['hospital_get_state','hospital_publish_delivery_plan','hospital_get_route_options','hospital_create_delivery_orders','hospital_pickup_package','hospital_confirm_delivery','hospital_defer_order','hospital_close_order','hospital_verify_run','hospital_wait_event','list_devices'])assert.equal(allowTool({name}).allow,true,name);
+assert.equal(allowTool({name:'call_device',args:{device:'hospital-robot-01',tool:'navigate_route'}}).allow,true);
+assert.equal(allowTool({name:'call_device',args:{device:'hospital-robot-01',tool:'navigate_to'}}).allow,false);
+assert.equal(allowTool({name:'call_device',args:{device:'another-robot',tool:'navigate_to'}}).allow,false);
+assert.equal(allowTool({name:'call_device',args:{device:'hospital-robot-01',tool:'drive'}}).allow,false);
+assert.equal(allowTool({name:'stop_device',args:{}}).allow,false);
+assert.equal(allowTool({name:'read_device',args:{device:'demo_camera'}}).allow,false);
+assert.equal(allowTool({name:'watch_device',args:{device:'hospital-robot-01'}}).allow,true);
+console.log('V2 scoped tool boundary assertions passed');
+assert.equal(allowTool({name:'tool_describe',args:{name:'hospital_create_delivery_orders'}}).allow,true);
+assert.equal(allowTool({name:'tool_describe',args:{name:'watch_device'}}).allow,true);
+for(const name of ['shell','read','http','another_tool','hospital_fake',undefined])assert.equal(allowTool({name:'tool_describe',args:{name}}).allow,false);
+console.log('PASS: description-only access limited to the existing project tool names');

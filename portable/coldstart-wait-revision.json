@@ -1,0 +1,35 @@
+{
+  "revision": "coldstart-wait-v1",
+  "scope": "Independent reproduction extraction startup waits only",
+  "cause": "The first independent bootstrap timed out at its 45 second asynchronous lifecycle response limit. The observed navigation startup interval was 120.25 wall seconds, so the old waiter rejected a still-starting lifecycle manager.",
+  "observed_navigation_start_wall": 1791951613.43049,
+  "observed_all_active_wall": 1791951733.677,
+  "observed_navigation_startup_wall_seconds": 120.24651,
+  "changes": [
+    {
+      "path": "scripts/nav_bootstrap.py",
+      "unique_expression": "wait_result(client.call_async(req),45)",
+      "before_wall_seconds": 45,
+      "after_wall_seconds": 150
+    },
+    {
+      "path": "mhs/manage.py",
+      "function": "wait_ready",
+      "before_wall_seconds": 180,
+      "after_wall_seconds": 480
+    }
+  ],
+  "readiness_derivation": "60 discovery + 10 warmup + 2*150 lifecycle manager response + 9*5 state response = 415 wall seconds; 65 seconds explicit margin gives 480",
+  "unchanged": [
+    "900 wall second simulator first-frame startup limit",
+    "60 actual model requests, 2400 simulation seconds, 3600 wall seconds per Agent batch",
+    "navigation qualification limits and stopping conditions",
+    "physical arrival, fresh telemetry, real stationary confirmation and motion guard",
+    "Nav2 parameters, station coordinates, map and delivery business validation"
+  ],
+  "fresh_installation": "Run prepare on untouched source using the updated apply_portability.py and baseline-sha256.json; the resulting manifest explicitly records this revision and both limits.",
+  "existing_prepared_copy": "Run python3 portable/migrate_startup_patch.py --root /your/short/repro-validation/project. It accepts only a validated inactive copy or an empty live run with watch off, no navigation, fresh physical stop and guard disarmed. It checks the exact project container label and /project mount when live. All original bound source hashes and config digest must match before source writes.",
+  "migration_preservation": "Original source-patch-manifest.json, portability.patch and both source files are backed up in a new runs/reproduction/startup-wait-migration-* directory before commit. Original failed bootstrap logs are never edited. Only the two unique waits are migrated and recorded in the source manifest and diff.",
+  "runtime_actions": "None. Migration does not start, stop, cancel, resume or restart any process, container, robot or model session.",
+  "acceptance_status": "Offline static generation and refusal checks only. Actual cold-start, navigation and physical stop must be reverified in separate real runtime evidence; a previous failed bootstrap remains failed."
+}

@@ -1,0 +1,196 @@
+{
+  "depot": {
+    "x": -12,
+    "y": 10.3,
+    "yaw": -1.5707963267948966,
+    "label": "物资库",
+    "id": "depot",
+    "aliases": [
+      "物资库",
+      "库房",
+      "物资库交接点"
+    ],
+    "room_id": "supply_room",
+    "district": "中央后勤",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "station_a": {
+    "x": -8.4,
+    "y": 11,
+    "yaw": 1.5707963267948966,
+    "label": "A 护士站",
+    "id": "station_a",
+    "aliases": [
+      "A站",
+      "A护士站",
+      "中央护士站"
+    ],
+    "room_id": "nurse_a",
+    "district": "中央护理",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "station_b": {
+    "x": -40.4,
+    "y": 20.2,
+    "yaw": 3.141592653589793,
+    "label": "B 护士站",
+    "id": "station_b",
+    "aliases": [
+      "B站",
+      "B护士站",
+      "西护士站"
+    ],
+    "room_id": "nurse_b",
+    "district": "西病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "station_c": {
+    "x": 19,
+    "y": 27.5,
+    "yaw": 3.141592653589793,
+    "label": "C 护士站",
+    "id": "station_c",
+    "aliases": [
+      "C站",
+      "C护士站",
+      "东护士站"
+    ],
+    "room_id": "nurse_c",
+    "district": "东病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "pharmacy": {
+    "x": -6,
+    "y": 4,
+    "yaw": 1.5707963267948966,
+    "label": "药房",
+    "id": "pharmacy",
+    "aliases": [
+      "药房",
+      "药房取货点",
+      "药房交接窗"
+    ],
+    "room_id": "pharmacy_room",
+    "district": "门厅药房",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "lab": {
+    "x": 19,
+    "y": 0,
+    "yaw": 0,
+    "label": "检验交接点",
+    "id": "lab",
+    "aliases": [
+      "检验科",
+      "检验科接收点",
+      "检验交接点",
+      "标本交接点"
+    ],
+    "room_id": "lab_reception",
+    "district": "东侧医技",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "emergency": {
+    "x": 20,
+    "y": 5,
+    "yaw": 0,
+    "label": "急诊接收点",
+    "id": "emergency",
+    "aliases": [
+      "急诊",
+      "急诊接收点"
+    ],
+    "room_id": "emergency_room",
+    "district": "东侧急诊",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "room301": {
+    "x": -40.6,
+    "y": 16.8,
+    "yaw": 3.141592653589793,
+    "label": "301 病房",
+    "id": "room301",
+    "aliases": [
+      "301",
+      "301病房",
+      "301病房门口"
+    ],
+    "room_id": "ward301",
+    "district": "西病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "room302": {
+    "x": -40.6,
+    "y": 24.2,
+    "yaw": 3.141592653589793,
+    "label": "302 病房",
+    "id": "room302",
+    "aliases": [
+      "302",
+      "302病房",
+      "302病房门口"
+    ],
+    "room_id": "ward302",
+    "district": "西病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "room303": {
+    "x": 19,
+    "y": 16.5,
+    "yaw": 3.141592653589793,
+    "label": "303 病房",
+    "id": "room303",
+    "aliases": [
+      "303",
+      "303病房",
+      "303病房门口"
+    ],
+    "room_id": "ward303",
+    "district": "东病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "room304": {
+    "x": 19,
+    "y": 20.2,
+    "yaw": 3.141592653589793,
+    "label": "304 病房",
+    "id": "room304",
+    "aliases": [
+      "304",
+      "304病房",
+      "304病房门口"
+    ],
+    "room_id": "ward304",
+    "district": "东病区",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  },
+  "waiting": {
+    "x": 1.5,
+    "y": 0.4,
+    "yaw": 1.5707963267948966,
+    "label": "候诊接待台",
+    "id": "waiting",
+    "aliases": [
+      "候诊区",
+      "服务台",
+      "候诊服务台",
+      "接待台",
+      "候诊接待台"
+    ],
+    "room_id": "reception",
+    "district": "入口门厅",
+    "coordinate_status": "layout_20261013_navigation_pending",
+    "handoff": "柜台外或房门外停车交接；不驶入床位区"
+  }
+}

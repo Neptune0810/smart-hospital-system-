@@ -1,0 +1,7 @@
+distlib==0.4.3
+filelock==4.1.0
+packaging==26.3
+platformdirs==4.12.4
+python-discovery==1.6.2
+typing_extensions==4.16.0
+virtualenv==21.14.6

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source": "Project source snapshot 2026-10-14; official Isaac hospital occupancy map and independently authored scenario code/configuration",
+  "files": [
+    {
+      "path": "maps/carter_hospital_navigation.png",
+      "bytes": 19415,
+      "sha256": "ed6424b156c9acc3c09631f154c1e789376f4c43a453f585df893e1d4471412b"
+    },
+    {
+      "path": "maps/carter_hospital_navigation.yaml",
+      "bytes": 140,
+      "sha256": "52713e20ec8c421b8d810af2df4b26143544f1653a36c0fe13e24b623f263f82"
+    },
+    {
+      "path": "configs/stations.json",
+      "bytes": 5076,
+      "sha256": "7888401f77d62357763760680c969f97c61817e6e0fb602ebbe804025ef1cc29"
+    },
+    {
+      "path": "configs/hospital-v2.json",
+      "bytes": 10030,
+      "sha256": "65c2e389c9da37f811f1d928717a8dc0177a50c75080ee04fdbb4dc76a06ae50"
+    },
+    {
+      "path": "configs/nav2.yaml",
+      "bytes": 12270,
+      "sha256": "fe5af2bcf03bd6a892bd8e0b8d856185cda0bc6697a7d6dd4b301ff75ec3662e"
+    },
+    {
+      "path": "configs/smart-ward-v1.json",
+      "bytes": 659,
+      "sha256": "31b51c41ee6c6d4ad1c3241bbd9b636e30968ac2eaa1e8b3f31473dabc7f54c6"
+    },
+    {
+      "path": "mhs/smart_scene.py",
+      "bytes": 77354,
+      "sha256": "2abc1ce4df822d088aff25387cfce55274a54e194043e20f3416313ced44da10"
+    },
+    {
+      "path": "mhs/smart_map.py",
+      "bytes": 5173,
+      "sha256": "14212fd052c13b1141ec506d1598543a93cc18e6739012fdeac459f30fcab685"
+    }
+  ],
+  "official_map": {
+    "image": "maps/carter_hospital_navigation.png",
+    "yaml": "maps/carter_hospital_navigation.yaml",
+    "sha256": "ed6424b156c9acc3c09631f154c1e789376f4c43a453f585df893e1d4471412b",
+    "size": [
+      1532,
+      836
+    ],
+    "resolution_m": 0.05,
+    "origin": [
+      -49.625,
+      -4.675,
+      0.0
+    ]
+  },
+  "official_stage": {
+    "isaac_sim_version": "6.0.1",
+    "asset_version": "6.0",
+    "relative_path": "Isaac/Samples/ROS2/Scenario/multiple_robot_carter_hospital_navigation.usd",
+    "resolved_by": "Isaac get_assets_root_path, after authorized official asset installation",
+    "not_bundled": true,
+    "stage_bytes_sha256": "133f9c5feeb8e2e33b8d0cb558e91c0b8cf62e8ab68e1ba9df78ab80e6f62b2d",
+    "root_file": {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Samples/ROS2/Scenario/multiple_robot_carter_hospital_navigation.usd",
+      "bytes": 23869,
+      "sha256": "133f9c5feeb8e2e33b8d0cb558e91c0b8cf62e8ab68e1ba9df78ab80e6f62b2d"
+    }
+  },
+  "expected_generated_map": {
+    "sha256": "64938c41757eca06fed3c9d5eeeb76c952e6d31f4a2198b49fbe4dd44ab8184f",
+    "cabinet_envelopes": {
+      "hospital-cabinet-b": [
+        -43.150000000000006,
+        19.75,
+        -42.75,
+        20.65
+      ],
+      "hospital-cabinet-c": [
+        16.21,
+        26.900000000000002,
+        16.61,
+        27.8
+      ],
+      "hospital-cabinet-lab": [
+        21.2,
+        -1.5000000000000004,
+        21.599999999999998,
+        -0.3000000000000004
+      ]
+    },
+    "scope": "Geometry consistency of the fixed current hospital assets. New USD-derived placement and physical Nav2 verification are separate requirements.",
+    "grayscale_pixel_sha256": "9bb7b21f30668583ab88f0808d87d507e0bbd0e1a89c26d785a18a54a5b0ee0a",
+    "pixel_encoding": "row-major 1532x836 grayscale8 occupancy pixels; PNG encoder differences allowed, actual PNG SHA still checked against this startup manifest"
+  }
+}

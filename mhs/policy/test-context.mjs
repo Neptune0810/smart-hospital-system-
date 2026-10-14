@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {hospitalContext} from './context.js';
+const official=Object.freeze({id:'core:untrusted-envelope',order:0,content:'mandatory safety envelope',source:'core'});
+const incoming=Object.freeze([official]);
+const result=hospitalContext(incoming,'hospital role');
+assert.equal(result.sections[0],official);
+assert.equal(incoming.length,1);
+assert.equal(result.sections[1].content,'hospital role');
+assert.equal(result.additionalContext,undefined);
+assert.equal(hospitalContext(result.sections,'updated role').sections.filter(s=>s.id==='hospital-delivery-role').length,1);
+console.log('PASS: mandatory context retained, project role is a single system section, no synthetic user message');

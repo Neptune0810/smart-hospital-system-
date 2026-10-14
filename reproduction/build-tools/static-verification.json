@@ -1,0 +1,22 @@
+{
+  "python_ast": {
+    "build_runtime.py": "passed",
+    "install_plugins.py": "passed"
+  },
+  "known_semantic_revisions": [
+    "corepack_version_checked_in_source_cwd_only",
+    "shallow_bundle_boundary_and_official_tree_pinned",
+    "web_parent_origin_derived_from_portable_ports_only",
+    "profile_YAML_supported_and_no_fake_provider",
+    "project_specific_pnpm_shim",
+    "editable_fixed_python_sdk_schema_bound",
+    "sdk_bin_on_build_backend_PATH",
+    "official_package_cli_home_profile_via_environment_only",
+    "versioned_admission_flag_in_plugin_setup",
+    "exact_package_MCP_TTY_confirmation",
+    "MCP_catalog_mode_persisted_because_stdio_default_env_excludes_HOSPITAL_MODE",
+    "own_daemon_identity_and_fixed_port_via_normal_lifecycle",
+    "plugin_report_finally_preserves_failures"
+  ],
+  "runtime_build": "Parent executes isolated source build; not counted by static parsing."
+}

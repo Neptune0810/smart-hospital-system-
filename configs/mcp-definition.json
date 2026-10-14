@@ -1,0 +1,12 @@
+{
+  "serverId": "hospital-delivery",
+  "displayName": "Hospital Delivery",
+  "transport": {
+    "kind": "stdio",
+    "executable": "/mnt/sda/omni-yezh/hospital-delivery-agent/scripts/mcp.sh",
+    "args": []
+  },
+  "secretBinding": {
+    "kind": "none"
+  }
+}

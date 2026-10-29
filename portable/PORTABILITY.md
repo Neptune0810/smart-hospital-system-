@@ -1,6 +1,6 @@
 # 智慧医院系统：可迁移运行配置
 
-这些工具放在**新解包工程根目录的 `portable/`**。工程可以解压在另一台 Ubuntu 22.04 机器的可写目录，包括带空格的目录；不需要原 Windows 电脑、原 SSH 私钥、原服务器地址、原 Unix 用户名或原 Docker socket。AGH 使用本地 Unix socket，完整 `工程根/agent/agh-home-mhs/data/daemon/agnesd.sock` 的 UTF-8 长度须不超过 107 字节；过长时入口明确拒绝并请使用较短路径。这是协议/操作系统限制，不是原作者的安装路径绑定。外部条件仍须准备：Isaac Sim 6.0.1、兼容 NVIDIA GPU/驱动、Docker、Node 24、自己的 Agnes 账号，以及官方医院、Nova Carter 和人物资产。
+这些工具放在**新解包工程根目录的 `portable/`**。工程可以解压在另一台 Ubuntu 22.04 机器的可写目录，包括带空格的目录；不需要原 Windows 电脑、原 SSH 私钥、原服务器地址、原 Unix 用户名或原 Docker socket。AGH 使用本地 Unix socket：`工程根/agent/agh-home-mhs/data/daemon/agnesd.sock` 的 UTF-8 长度须不超过 107 字节，固定上游版本还要求 `工程根/agent/agh-home-mhs/data/daemon/workers.sock` 不超过 103 字节。请使用足够短的目录；原版预检只检查前者，因此通过预检不保证满足后者。外部条件仍须准备：Isaac Sim 6.0.1、兼容 NVIDIA GPU/驱动、Docker、Node 24、自己的 Agnes 账号，以及官方医院、Nova Carter 和人物资产。
 
 ## 配置与顺序
 

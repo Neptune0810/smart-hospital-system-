@@ -5,10 +5,18 @@
   "runtime_source_and_locks_modified": false,
   "publication_document_changes": [
     "README.md",
+    "README.zh-CN.md",
     ".gitignore",
     ".gitattributes",
     "docs/DEPLOYMENT.md",
-    "docs/SOURCE_MANIFEST.json"
+    "docs/SOURCE_MANIFEST.json",
+    "THIRD_PARTY.md",
+    "VERIFICATION.json",
+    "docs/media/smart-hospital-demo-zh.mp4",
+    "docs/DEPLOYMENT.en.md",
+    "portable/PORTABILITY.md",
+    "docs/images/architecture-en.svg",
+    "docs/images/architecture-zh-CN.svg"
   ],
   "files": [
     {
@@ -18,8 +26,28 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 415,
-      "sha256": "d0a0a211a3cf4c2eda254a3175317881458f346263a87a80abd17e4bdfedb8d4"
+      "bytes": 454,
+      "sha256": "de67b53e2ca6952ca6ac8dee11b5621f3ce3ac146944a5db3b199645317d6d4c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7626,
+      "sha256": "e8c8a4a1235cf467651bc2c980348a73f7579e601a42c38db91d2598d02a6fb8"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 6823,
+      "sha256": "54c21874c8a666522dd6e1189af6cb33e068704e784afb7c27a5f9f83bb4ab78"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1552,
+      "sha256": "ea5c9a405b7d9f032d2c03c539c3c2ecbab487d89e9931203be16092f5de8f1a"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 5731,
+      "sha256": "1ccfe1bf0fe357e2e5f442d3ea6a3a027e998c95596f0120a763514a35c2e6ef"
     },
     {
       "path": "configs/experiment.json",
@@ -77,14 +105,34 @@
       "sha256": "7888401f77d62357763760680c969f97c61817e6e0fb602ebbe804025ef1cc29"
     },
     {
+      "path": "docs/DEPLOYMENT.en.md",
+      "bytes": 9615,
+      "sha256": "7c0a3767ffd76dca98cefad2691f5e67ac397603234558896ce38b15d6ea4d55"
+    },
+    {
       "path": "docs/DEPLOYMENT.md",
-      "bytes": 20150,
-      "sha256": "2cba690d66ae7dadcc33f5598a790a11587e5531f0c43283b961b8a8155bba06"
+      "bytes": 20786,
+      "sha256": "0ff5810696a476bdac91244fad1de381e565b25e69e022081ee586011eaf410c"
     },
     {
       "path": "docs/SOURCE_MANIFEST.json",
       "bytes": 46992,
       "sha256": "afab2e642a7c56ab626f5ffe487b94d899a5fb0eb6c65227bb8963a838c2e415"
+    },
+    {
+      "path": "docs/images/architecture-en.svg",
+      "bytes": 8572,
+      "sha256": "07b43e2f44743d8e689b4352866a4e594c3a23cffee068b679d974ede766cf82"
+    },
+    {
+      "path": "docs/images/architecture-zh-CN.svg",
+      "bytes": 8513,
+      "sha256": "68f58599ec8568acc3545e2f35652ab96bb89a8f6be8b16ba3310d5fc9149a65"
+    },
+    {
+      "path": "docs/media/smart-hospital-demo-zh.mp4",
+      "bytes": 44768519,
+      "sha256": "ae33c7339323cd59644f859f7032c11b13b23712777109b0ce7eb906165a9b7c"
     },
     {
       "path": "launch/navigation.launch.py",
@@ -1077,6 +1125,11 @@
       "sha256": "59b0e4228db01a8d7f17c4f8dec81afc2f2fd4f5bede3cccb34d633cbcb4e0ff"
     },
     {
+      "path": "portable/PORTABILITY.md",
+      "bytes": 6528,
+      "sha256": "4f0eaa2ec8e35ffe0b12e972fb51192a6a8acbbd9b472195038acf09ca286cd1"
+    },
+    {
       "path": "portable/apply_portability.py",
       "bytes": 11226,
       "sha256": "b5f38720b49afd24090738e46c001e5f8d54b5c2bddbfac1877ba42088589d31"
@@ -1102,19 +1155,14 @@
       "sha256": "4fb673fa18aaeb7b9b48d625bab3fb65f38e9bc3be8328e7229efb0f37130ce6"
     },
     {
-      "path": "portable/PORTABILITY.md",
-      "bytes": 6453,
-      "sha256": "c094ef5887287610c8586ad4250ffec359dbbb9ab4dda8d893b22a170fa79702"
-    },
-    {
       "path": "portable/portable_config.py",
       "bytes": 4445,
       "sha256": "d619c7daaaba44b31a13570f6f038d6ff6281b3209b177fa6782bb436ca658a6"
     },
     {
-      "path": "README.md",
-      "bytes": 2823,
-      "sha256": "5642583ffe29cf6d1adcdb345f4b83e86d2aba43fe636e8e317f52f5de3ca717"
+      "path": "reproduction/build-tools/README.md",
+      "bytes": 7631,
+      "sha256": "650bde47be192745081b6da55ab1ca1347afe5c36841f681b881f183650ddd6d"
     },
     {
       "path": "reproduction/build-tools/bootstrap-requirements.lock.txt",
@@ -1157,11 +1205,6 @@
       "sha256": "32510046fd13d49adc47d349961cedb000f721f4840fd7bff39b02743aa9f411"
     },
     {
-      "path": "reproduction/build-tools/README.md",
-      "bytes": 7631,
-      "sha256": "650bde47be192745081b6da55ab1ca1347afe5c36841f681b881f183650ddd6d"
-    },
-    {
       "path": "reproduction/build-tools/requirements.lock.txt",
       "bytes": 688,
       "sha256": "d3e74941da9d24066439a0ab0ca5c7194890355f0dbee6b4dccc76c31c7f9cf9"
@@ -1180,6 +1223,16 @@
       "path": "reproduction/build-tools/upstream-package.json",
       "bytes": 963,
       "sha256": "a75ea1a86071309849166607fe284e9506d9352e7e1882d8393482025dd5f23e"
+    },
+    {
+      "path": "reproduction/nav-assets/Dockerfile",
+      "bytes": 1021,
+      "sha256": "4d15622dd46f3313bdb459a1cc53bde9cf0ecfec558b4c6ee1325de1944530a9"
+    },
+    {
+      "path": "reproduction/nav-assets/README.md",
+      "bytes": 9370,
+      "sha256": "a4724e415d92d3e220a5bb9d6766fa7b92bfbae60c48392ea6bf08503e2b6a62"
     },
     {
       "path": "reproduction/nav-assets/apt-packages.historical-20260908.lock",
@@ -1202,11 +1255,6 @@
       "sha256": "fb7b3da8b40b29645fc8ec4797869759e619a63b29252d95b07c693ae6520d00"
     },
     {
-      "path": "reproduction/nav-assets/Dockerfile",
-      "bytes": 1021,
-      "sha256": "4d15622dd46f3313bdb459a1cc53bde9cf0ecfec558b4c6ee1325de1944530a9"
-    },
-    {
       "path": "reproduction/nav-assets/fetch_ros_archive.py",
       "bytes": 15397,
       "sha256": "7ccb4aded5f6a102a6e00d11f05a5668eb0998725dc9535230421b36a1a7ea04"
@@ -1220,11 +1268,6 @@
       "path": "reproduction/nav-assets/prepare_assets.py",
       "bytes": 8521,
       "sha256": "4050796a4fa7d5d71558ee5b80fa0460857f858d540f11237b86a8e44183a264"
-    },
-    {
-      "path": "reproduction/nav-assets/README.md",
-      "bytes": 9370,
-      "sha256": "a4724e415d92d3e220a5bb9d6766fa7b92bfbae60c48392ea6bf08503e2b6a62"
     },
     {
       "path": "reproduction/nav-assets/requirements-nav.lock.txt",
@@ -1422,20 +1465,11 @@
       "sha256": "6c50a696442a26ddf0ee1288fac58e29cf249da98505d7ea4acc7346f6817836"
     },
     {
-      "path": "THIRD_PARTY.md",
-      "bytes": 1094,
-      "sha256": "d67244130e08757dbe953a5330db76c822d0e03f3d18e64a1198d14112e5cad0"
-    },
-    {
       "path": "vendor/agnes-harness.bundle",
       "bytes": 26060728,
       "sha256": "5a178d419bba25977ee5d3cc5a654b473e9d9bbca1fd387f29040182e0594c07"
-    },
-    {
-      "path": "VERIFICATION.json",
-      "bytes": 5751,
-      "sha256": "74644499b19b3d28d5165fd07ca1ea84a18a7e498fc22a610d501f9ff28cff68"
     }
   ],
-  "file_count_excluding_manifest": 285
+  "file_count_excluding_manifest": 290,
+  "updated_asia_shanghai": "2026-10-29T12:45:48.425748+08:00"
 }

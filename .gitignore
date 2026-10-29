@@ -17,6 +17,7 @@ vendor/isaac-assets/
 *.pid
 *.log
 *.mp4
+!docs/media/smart-hospital-demo-zh.mp4
 *.jpg
 *.jpeg
 *.png

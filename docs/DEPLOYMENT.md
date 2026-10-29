@@ -2,7 +2,7 @@
 
 交付方式：**源码与固定构建输入、依赖锁、资产取得工具、启动入口和验证记录**。复现者在自己的 Linux GPU 主机运行，不需要作者的 Windows 电脑、服务器地址、用户名、SSH 私钥、旧容器或账号 home。运行源码包与历史参赛证据分别保留；不要把历史数据库、命令、ACK、PID 或会话复制到新工程冒充新运行。
 
-本指南分成两阶段：先完成**安装与仿真**，再配置自己的账号验证**真实 Agent**。本次用户选择先核验安装与仿真，真实 Agent 项为 **NA／未执行**；不能用历史任务、设备注册成功或 HTTP 200 代替本次真实 Agent 验证。
+本指南分成两阶段：先完成**安装与仿真**，再配置自己的账号验证**真实 Agent**。2026 年 10 月 14 日的独立复现未配置账号，该轮真实 Agent 项为 NA；之后在同一服务器的另一独立副本完成了一次真实 Agent 正常流程。新部署仍需自行验证，设备注册成功或 HTTP 200 不能代替完整任务验收。
 
 ## 运行前提
 
@@ -18,7 +18,7 @@
 | 外部资产 | 匹配的官方医院、Nova Carter、人物动作、材质与纹理；首次取得需要可访问的官方来源或本机合法资产库 |
 | 真实 Agent | 后续使用自己的 Agnes 账号／provider 配置；凭据不在作品包中 |
 
-建议解压到 `~/smart-hospital` 这样的短目录。AGH 使用本地 Unix socket，完整 `工程根/agent/agh-home-mhs/data/daemon/agnesd.sock` 的 UTF-8 长度必须 **≤107 字节**。带空格的目录受支持，但较深或中文很长的目录可能超过该协议限制，入口会明确拒绝；这不是对作者安装路径的绑定。
+建议解压到 `~/smart-hospital` 这样的短目录。AGH 使用本地 Unix socket：除原版预检的 `工程根/agent/agh-home-mhs/data/daemon/agnesd.sock` 路径上限 107 字节外，所固定的上游版本对 `工程根/agent/agh-home-mhs/data/daemon/workers.sock` 还有 **103 字节**的判定。路径长度按 UTF-8 字节计算，建议让两条路径都满足各自上限。仅通过原版的 107 字节预检不一定足够：路径较深时上游可能改用临时目录，而原版工作台不接受该路径。带空格的短目录受支持；中文或层级很深的路径要特别注意字节长度。这不是对作者安装路径的绑定。
 
 运行源码根目录应含 `portable/`、`reproduction/build-tools/`、`reproduction/nav-assets/`、`mhs/`、`configs/`、`maps/`。下列步骤都在该根目录执行。
 
@@ -129,11 +129,12 @@ python3 reproduction/nav-assets/verify_official_stage.py \
 ### 6. 正常安装项目插件，安装阶段无需模型账号
 
 ```bash
+install -d -m 700 "$PROJECT_ROOT/agent/agh-home-mhs"
 python3 reproduction/build-tools/install_plugins.py \
   --root "$PROJECT_ROOT" --execute
 ```
 
-新独立 home 没有 profile 时，工具创建不含 provider/account/model 的合法项目 profile。随后按正常 `inspect → add → trust 本次 integrity/capability hash → enable` 流程安装 `@agnes/mhs` 和 `hospital-mhs-policy`，校验 MCP revision 并测试真实 transport/catalog。它不会复制旧账号 home、API Key 或审批设置，不构造模拟模型；协议安装测试不是 Agent 配送验收。
+前一条命令只为本项目的新账号目录设置用户专用权限；如果目录已存在，应先确认它确属本项目。新独立 home 没有 profile 时，工具创建不含 provider/account/model 的合法项目 profile。随后按正常 `inspect → add → trust 本次 integrity/capability hash → enable` 流程安装 `@agnes/mhs` 和 `hospital-mhs-policy`，校验 MCP revision 并测试真实 transport/catalog。它不会复制旧账号 home、API Key 或审批设置，不构造模拟模型；协议安装测试不是 Agent 配送验收。
 
 安装器建立本副本合法的智慧病区模式声明，核验实际八工具目录，并正常停止安装检查用的自身 daemon/Hub；插件信任、启用和 profile 状态保留。随后统一 start 从完整停止状态启动，不要求关闭公共服务或放宽端口占用检查。
 
@@ -211,7 +212,7 @@ node "$PROJECT_ROOT/agent/agh-runtime-smart-ward145/agnes.mjs" config
 
 不要把 API Key 作为命令行参数、写入源码或提交包，不从作者机器拷贝账户。配置完成后再按演示步骤：新一轮 → 开始值守 → B 站放入标本，同时使 301 照明变暗 → 观察真实任务分解、选路、柜体交接、新读数恢复和最终核验。
 
-完整结果必须关联本次真实模型请求、Hub/MHS 记录、订单/标本唯一编号、导航轨迹、场景 ACK、交接回执和新读数。模型调用失败、超预算、未交付及错误保留，不能把上一轮回执作为本轮成功。本次账号阶段由用户选择暂缓，**真实 Agent 复现验证保持 NA**。
+完整结果必须关联本次真实模型请求、Hub/MHS 记录、订单/标本唯一编号、导航轨迹、场景 ACK、交接回执和新读数。模型调用失败、超预算、未交付及错误保留，不能把上一轮回执作为本轮成功。2026 年 10 月 14 日的独立复现没有执行真实 Agent 验证；后续单次成功和该轮结果分别记录在首页。
 
 ## 停止、新一轮与归属
 

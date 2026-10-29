@@ -102,7 +102,7 @@
     "first_capture_wall_time": 1791953563.2117803,
     "last_capture_wall_time": 1791954491.340297,
     "capture_wall_span": 928.1285166740417,
-    "video": "/mnt/sda/omni-yezh/hospital-delivery-agent/repro-validation/v1/runs/reproduction/runtime-check-1/simulation.mp4",
+    "video": "Original server-local recording retained outside this repository; public link not provided.",
     "video_bytes": 29286625,
     "source": "actual Isaac JPEG frames with original capture stamps; playback is not a wall-clock duration measurement",
     "ffmpeg_exit_code": 0

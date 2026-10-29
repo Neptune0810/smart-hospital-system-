@@ -20,6 +20,14 @@
 
 ## 视频介绍
 
+[![智慧医院系统演示预览：点击前往 Bilibili 观看完整版](docs/media/smart-hospital-preview.gif)](https://www.bilibili.com/video/BV1Rvxc6tEwS/)
+
+[Bilibili 在线观看扩展版](https://www.bilibili.com/video/BV1Rvxc6tEwS/)（4 分 58 秒，中文讲解）。
+
+[百度网盘下载演示资源](https://pan.baidu.com/c/1rQSv6LUlh6DtN8o9eGTgRQ?pwd=xxxp)，提取码：`xxxp`。包含预览 GIF、全片 GIF、压缩有声 MP4 和 1080p 扩展版原片。
+
+原仓库视频入口：
+
 [观看或下载演示视频](docs/media/smart-hospital-demo-zh.mp4)（4 分 18 秒，中文讲解）。视频展示工作台、标本取送和照明反馈，由标注过的不同运行片段剪辑而成。
 
 ## 架构介绍

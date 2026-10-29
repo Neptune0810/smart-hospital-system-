@@ -20,6 +20,14 @@ Agnes decides the order of work. A delivery or lighting issue is closed only aft
 
 ## Demo video
 
+[![Smart Hospital System demo preview — click to watch on Bilibili](docs/media/smart-hospital-preview.gif)](https://www.bilibili.com/video/BV1Rvxc6tEwS/)
+
+[Watch the extended demo on Bilibili](https://www.bilibili.com/video/BV1Rvxc6tEwS/) (4 min 58 sec; Chinese narration).
+
+[Download the media collection from Baidu Netdisk](https://pan.baidu.com/c/1rQSv6LUlh6DtN8o9eGTgRQ?pwd=xxxp) — extraction code: `xxxp`. Includes the preview GIF, full-length GIF, compressed narrated MP4 and 1080p extended demo.
+
+Original repository video:
+
 [Watch or download the demo](docs/media/smart-hospital-demo-zh.mp4) (4 min 18 sec; Chinese narration). It shows the workbench, specimen delivery and lighting feedback. The video combines labelled clips from different runs.
 
 ## Architecture

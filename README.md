@@ -82,4 +82,4 @@ During the later run, the first light-control attempt was denied because the mod
 
 See [THIRD_PARTY.md](THIRD_PARTY.md) for component origins and licenses. The Apache-2.0 license included under `third-party/agnes-harness/` applies to that upstream component; the project team's own license has not yet been specified. NVIDIA software and assets must be obtained and used under their own terms.
 
-The real-agent run above used `agnes-3.0-flash`. Codex assisted with development and documentation.
+The real-agent run above used `agnes-3.0-flash`. 

@@ -89,4 +89,4 @@ python3 portable/control.py status
 
 第三方来源与授权见 [THIRD_PARTY.md](THIRD_PARTY.md)。`third-party/agnes-harness/` 中的 Apache-2.0 许可适用于该上游组件；团队自有代码的许可证尚未确定。NVIDIA 软件与资产需按其各自条款取得和使用。
 
-上述真实 Agent 测试使用 `agnes-3.0-flash`。开发和文档整理使用了 Codex 辅助。
+上述真实 Agent 测试使用 `agnes-3.0-flash`。
